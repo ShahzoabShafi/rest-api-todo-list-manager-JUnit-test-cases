@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="api.KnownBugsTest" time="4.295" tests="16" errors="0" skipped="0" failures="10">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/shahzoabshafi/Desktop/api-test-suite/target/test-classes:/home/shahzoabshafi/Desktop/api-test-suite/target/classes:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.0/junit-jupiter-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/home/shahzoabshafi/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.0/junit-jupiter-engine-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/platform/junit-platform-engine/1.11.0/junit-platform-engine-1.11.0.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/shahzoabshafi/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/shahzoabshafi/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/shahzoabshafi/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/shahzoabshafi/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="America/Toronto"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/shahzoabshafi/Desktop/api-test-suite/target/surefire/surefirebooter-20261010175048742_3.jar /home/shahzoabshafi/Desktop/api-test-suite/target/surefire 2026-10-10T17-50-47_878-jvmRun1 surefire-20261010175048742_1tmp surefire_0-20261010175048742_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/shahzoabshafi/Desktop/api-test-suite/target/test-classes:/home/shahzoabshafi/Desktop/api-test-suite/target/classes:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.0/junit-jupiter-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/home/shahzoabshafi/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.0/junit-jupiter-engine-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/platform/junit-platform-engine/1.11.0/junit-platform-engine-1.11.0.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/shahzoabshafi/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/shahzoabshafi/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/shahzoabshafi/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/shahzoabshafi/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/shahzoabshafi"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-08-18"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/shahzoabshafi/Desktop/api-test-suite"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/shahzoabshafi/Desktop/api-test-suite/target/surefire/surefirebooter-20261010175048742_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.12.1+1-1-22.04.4-Ubuntu"/>
+    <property name="user.name" value="shahzoabshafi"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.8.0-138-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/shahzoabshafi/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="21.0.12.1"/>
+    <property name="user.dir" value="/home/shahzoabshafi/Desktop/api-test-suite"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="21.0.12.1+1-1-22.04.4-Ubuntu"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="bug5_actual_getAndPostOnTasksOfByIdReturn404" classname="api.KnownBugsTest" time="1.461">
+    <system-out><![CDATA[Random order seed: not set
+
+KnownBugsTest.bug5_actual_getAndPostOnTasksOfByIdReturn404
+    GET /todos/3/tasksof/2                             expected 404, received 404
+    POST /todos/3/tasksof/2                            expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="bug3_actual_categoriesOfUnknownTodoReturns200" classname="api.KnownBugsTest" time="0.248">
+    <system-out><![CDATA[
+KnownBugsTest.bug3_actual_categoriesOfUnknownTodoReturns200
+    GET /todos/999999/categories                       expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="bug4_expected_tasksOfWithoutIdIsRejected" classname="api.KnownBugsTest" time="0.274">
+    <failure message="POST /todos/4/tasksof ({}) should return a 4xx status but returned 201 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: POST /todos/4/tasksof ({}) should return a 4xx status but returned 201 ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at api.BaseApiTest.expectClientError(BaseApiTest.java:46)
+	at api.KnownBugsTest.bug4_expected_tasksOfWithoutIdIsRejected(KnownBugsTest.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+KnownBugsTest.bug4_expected_tasksOfWithoutIdIsRejected
+    POST /todos/4/tasksof ({})                         expected 4xx, received 201   <-- MISMATCH
+    result: FAIL - POST /todos/4/tasksof ({}) should return a 4xx status but returned 201 ==> expected: <true> but was: <false>
+]]></system-out>
+  </testcase>
+  <testcase name="bug7_expected_putWithOnlyATitleKeepsTheOtherFields" classname="api.KnownBugsTest" time="0.232">
+    <failure message="expected: &lt;Todo[id=5, title=renamed, doneStatus=true, description=keep me]&gt; but was: &lt;Todo[id=5, title=renamed, doneStatus=false, description=]&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <Todo[id=5, title=renamed, doneStatus=true, description=keep me]> but was: <Todo[id=5, title=renamed, doneStatus=false, description=]>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at api.KnownBugsTest.bug7_expected_putWithOnlyATitleKeepsTheOtherFields(KnownBugsTest.java:140)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+KnownBugsTest.bug7_expected_putWithOnlyATitleKeepsTheOtherFields
+    PUT /todos/5                                       expected 200, received 200
+    result: FAIL - expected: <Todo[id=5, title=renamed, doneStatus=true, description=keep me]> but was: <Todo[id=5, title=renamed, doneStatus=false, description=]>
+]]></system-out>
+  </testcase>
+  <testcase name="bug2_actual_tasksOfUnknownTodoReturns200WithNoProjects" classname="api.KnownBugsTest" time="0.161">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at api.KnownBugsTest.bug2_actual_tasksOfUnknownTodoReturns200WithNoProjects(KnownBugsTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+KnownBugsTest.bug2_actual_tasksOfUnknownTodoReturns200WithNoProjects
+    GET /todos/999999/tasksof                          expected 200, received 200
+    result: FAIL - expected: <true> but was: <false>
+]]></system-out>
+  </testcase>
+  <testcase name="bug7_actual_putWithOnlyATitleResetsTheOtherFields" classname="api.KnownBugsTest" time="0.199">
+    <system-out><![CDATA[
+KnownBugsTest.bug7_actual_putWithOnlyATitleResetsTheOtherFields
+    PUT /todos/6                                       expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="bug4_actual_tasksOfWithoutIdLinksEveryProject" classname="api.KnownBugsTest" time="0.213">
+    <failure message="expected: &lt;[1, 5, 6]&gt; but was: &lt;[6]&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <[1, 5, 6]> but was: <[6]>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at api.KnownBugsTest.bug4_actual_tasksOfWithoutIdLinksEveryProject(KnownBugsTest.java:90)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+KnownBugsTest.bug4_actual_tasksOfWithoutIdLinksEveryProject
+    POST /todos/7/tasksof ({})                         expected 201, received 201
+    result: FAIL - expected: <[1, 5, 6]> but was: <[6]>
+]]></system-out>
+  </testcase>
+  <testcase name="bug1_actual_arrayTitleKeepsOnlyTheLastElement" classname="api.KnownBugsTest" time="0.172">
+    <system-out><![CDATA[
+KnownBugsTest.bug1_actual_arrayTitleKeepsOnlyTheLastElement
+    POST /todos (title is an array)                    expected 201, received 201
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="bug5_expected_getAndPostOnTasksOfByIdReturn405" classname="api.KnownBugsTest" time="0.18">
+    <failure message="GET /todos/9/tasksof/7 status code ==&gt; expected: &lt;405&gt; but was: &lt;404&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: GET /todos/9/tasksof/7 status code ==> expected: <405> but was: <404>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.KnownBugsTest.bug5_expected_getAndPostOnTasksOfByIdReturn405(KnownBugsTest.java:99)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+KnownBugsTest.bug5_expected_getAndPostOnTasksOfByIdReturn405
+    GET /todos/9/tasksof/7                             expected 405, received 404   <-- MISMATCH
+    result: FAIL - GET /todos/9/tasksof/7 status code ==> expected: <405> but was: <404>
+]]></system-out>
+  </testcase>
+  <testcase name="bug3_expected_categoriesOfUnknownTodoReturns404" classname="api.KnownBugsTest" time="0.144">
+    <failure message="GET /todos/999999/categories status code ==&gt; expected: &lt;404&gt; but was: &lt;200&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: GET /todos/999999/categories status code ==> expected: <404> but was: <200>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.KnownBugsTest.bug3_expected_categoriesOfUnknownTodoReturns404(KnownBugsTest.java:62)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+KnownBugsTest.bug3_expected_categoriesOfUnknownTodoReturns404
+    GET /todos/999999/categories                       expected 404, received 200   <-- MISMATCH
+    result: FAIL - GET /todos/999999/categories status code ==> expected: <404> but was: <200>
+]]></system-out>
+  </testcase>
+  <testcase name="bug8_expected_putKeepsTheRelationships" classname="api.KnownBugsTest" time="0.211">
+    <failure message="expected: &lt;[8]&gt; but was: &lt;[]&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <[8]> but was: <[]>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at api.KnownBugsTest.bug8_expected_putKeepsTheRelationships(KnownBugsTest.java:162)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+KnownBugsTest.bug8_expected_putKeepsTheRelationships
+    PUT /todos/10                                      expected 200, received 200
+    result: FAIL - expected: <[8]> but was: <[]>
+]]></system-out>
+  </testcase>
+  <testcase name="bug1_expected_arrayTitleIsRejected" classname="api.KnownBugsTest" time="0.169">
+    <failure message="POST /todos (title is an array) status code ==&gt; expected: &lt;400&gt; but was: &lt;201&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: POST /todos (title is an array) status code ==> expected: <400> but was: <201>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.KnownBugsTest.bug1_expected_arrayTitleIsRejected(KnownBugsTest.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+KnownBugsTest.bug1_expected_arrayTitleIsRejected
+    POST /todos (title is an array)                    expected 400, received 201   <-- MISMATCH
+    result: FAIL - POST /todos (title is an array) status code ==> expected: <400> but was: <201>
+]]></system-out>
+  </testcase>
+  <testcase name="bug2_expected_tasksOfUnknownTodoReturns404" classname="api.KnownBugsTest" time="0.122">
+    <failure message="GET /todos/999999/tasksof status code ==&gt; expected: &lt;404&gt; but was: &lt;200&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: GET /todos/999999/tasksof status code ==> expected: <404> but was: <200>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.KnownBugsTest.bug2_expected_tasksOfUnknownTodoReturns404(KnownBugsTest.java:46)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+KnownBugsTest.bug2_expected_tasksOfUnknownTodoReturns404
+    GET /todos/999999/tasksof                          expected 404, received 200   <-- MISMATCH
+    result: FAIL - GET /todos/999999/tasksof status code ==> expected: <404> but was: <200>
+]]></system-out>
+  </testcase>
+  <testcase name="bug6_actual_methodOverrideHeaderTurnsPutIntoPost" classname="api.KnownBugsTest" time="0.151">
+    <system-out><![CDATA[
+KnownBugsTest.bug6_actual_methodOverrideHeaderTurnsPutIntoPost
+    PUT /todos/12/categories (override POST)           expected 201, received 201
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="bug6_expected_methodOverrideHeaderIsIgnored" classname="api.KnownBugsTest" time="0.147">
+    <failure message="PUT /todos/13/categories (override POST) status code ==&gt; expected: &lt;405&gt; but was: &lt;201&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: PUT /todos/13/categories (override POST) status code ==> expected: <405> but was: <201>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.KnownBugsTest.bug6_expected_methodOverrideHeaderIsIgnored(KnownBugsTest.java:118)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+KnownBugsTest.bug6_expected_methodOverrideHeaderIsIgnored
+    PUT /todos/13/categories (override POST)           expected 405, received 201   <-- MISMATCH
+    result: FAIL - PUT /todos/13/categories (override POST) status code ==> expected: <405> but was: <201>
+]]></system-out>
+  </testcase>
+  <testcase name="bug8_actual_putRemovesTheRelationships" classname="api.KnownBugsTest" time="0.185">
+    <system-out><![CDATA[
+KnownBugsTest.bug8_actual_putRemovesTheRelationships
+    PUT /todos/14                                      expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+</testsuite>

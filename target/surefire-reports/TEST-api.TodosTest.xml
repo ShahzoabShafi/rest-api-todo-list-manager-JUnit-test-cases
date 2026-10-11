@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="api.TodosTest" time="10.824" tests="75" errors="0" skipped="0" failures="10">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/shahzoabshafi/Desktop/api-test-suite/target/test-classes:/home/shahzoabshafi/Desktop/api-test-suite/target/classes:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.0/junit-jupiter-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/home/shahzoabshafi/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.0/junit-jupiter-engine-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/platform/junit-platform-engine/1.11.0/junit-platform-engine-1.11.0.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/shahzoabshafi/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/shahzoabshafi/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/shahzoabshafi/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/shahzoabshafi/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="America/Toronto"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/shahzoabshafi/Desktop/api-test-suite/target/surefire/surefirebooter-20261010175048742_3.jar /home/shahzoabshafi/Desktop/api-test-suite/target/surefire 2026-10-10T17-50-47_878-jvmRun1 surefire-20261010175048742_1tmp surefire_0-20261010175048742_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/shahzoabshafi/Desktop/api-test-suite/target/test-classes:/home/shahzoabshafi/Desktop/api-test-suite/target/classes:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.0/junit-jupiter-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/home/shahzoabshafi/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.0/junit-jupiter-engine-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/platform/junit-platform-engine/1.11.0/junit-platform-engine-1.11.0.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/shahzoabshafi/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/shahzoabshafi/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/shahzoabshafi/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/shahzoabshafi/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/shahzoabshafi"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-08-18"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/shahzoabshafi/Desktop/api-test-suite"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/shahzoabshafi/Desktop/api-test-suite/target/surefire/surefirebooter-20261010175048742_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.12.1+1-1-22.04.4-Ubuntu"/>
+    <property name="user.name" value="shahzoabshafi"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.8.0-138-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/shahzoabshafi/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="21.0.12.1"/>
+    <property name="user.dir" value="/home/shahzoabshafi/Desktop/api-test-suite"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="21.0.12.1+1-1-22.04.4-Ubuntu"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="postProjectWithMalformedJsonLinksNothing" classname="api.TodosTest" time="0.3">
+    <system-out><![CDATA[
+TodosTest.postProjectWithMalformedJsonLinksNothing
+    POST /todos/18/tasksof (malformed json)            expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="swaggerFileDescribesTheTodoEndpoints" classname="api.TodosTest" time="0.277">
+    <system-out><![CDATA[
+TodosTest.swaggerFileDescribesTheTodoEndpoints
+    GET /docs/swagger                                  expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postCategoryToUnknownTodoIsRejected" classname="api.TodosTest" time="0.119">
+    <system-out><![CDATA[
+TodosTest.postCategoryToUnknownTodoIsRejected
+    POST /todos/999999/categories                      expected 4xx, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteRemovesOnlyThatTodo" classname="api.TodosTest" time="0.126">
+    <system-out><![CDATA[
+TodosTest.deleteRemovesOnlyThatTodo
+    DELETE /todos/19                                   expected 200, received 200
+    GET /todos/19                                      expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postWithMalformedXmlIsRejected" classname="api.TodosTest" time="0.103">
+    <system-out><![CDATA[
+TodosTest.postWithMalformedXmlIsRejected
+    POST /todos (malformed xml)                        expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postCreatesTodoAndAddsNothingElse" classname="api.TodosTest" time="0.117">
+    <system-out><![CDATA[
+TodosTest.postCreatesTodoAndAddsNothingElse
+    POST /todos                                        expected 201, received 201
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postWithMalformedJsonIsRejected" classname="api.TodosTest" time="0.274">
+    <system-out><![CDATA[
+TodosTest.postWithMalformedJsonIsRejected
+    POST /todos (malformed json)                       expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="filterByAllFields" classname="api.TodosTest" time="0.214">
+    <system-out><![CDATA[
+TodosTest.filterByAllFields
+    GET /todos?title&doneStatus&description            expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="headTasksOf" classname="api.TodosTest" time="0.164">
+    <system-out><![CDATA[
+TodosTest.headTasksOf
+    HEAD /todos/23/tasksof                             expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postCategoryWithMalformedJsonLinksNothing" classname="api.TodosTest" time="0.109">
+    <system-out><![CDATA[
+TodosTest.postCategoryWithMalformedJsonLinksNothing
+    POST /todos/24/categories (malformed json)         expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postLinksTodoToCategoryOnlyOnce" classname="api.TodosTest" time="0.13">
+    <system-out><![CDATA[
+TodosTest.postLinksTodoToCategoryOnlyOnce
+    POST /todos/25/categories                          expected 201, received 201
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="unknownQueryParameterIsIgnored" classname="api.TodosTest" time="0.112">
+    <system-out><![CDATA[
+TodosTest.unknownQueryParameterIsIgnored
+    GET /todos?randomParameter=test                    expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getTasksOfAsXml" classname="api.TodosTest" time="0.19">
+    <system-out><![CDATA[
+TodosTest.getTasksOfAsXml
+    GET /todos/27/tasksof (Accept xml)                 expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="headCategories" classname="api.TodosTest" time="0.114">
+    <system-out><![CDATA[
+TodosTest.headCategories
+    HEAD /todos/28/categories                          expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteUnknownOrAlreadyDeletedTodoReturns404" classname="api.TodosTest" time="0.116">
+    <system-out><![CDATA[
+TodosTest.deleteUnknownOrAlreadyDeletedTodoReturns404
+    DELETE /todos/29 (again)                           expected 404, received 404
+    DELETE /todos/999999                               expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="bug4_expected_tasksOfWithoutIdIsRejected" classname="api.TodosTest" time="0.107">
+    <failure message="POST /todos/30/tasksof ({}) should return a 4xx status but returned 201 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: POST /todos/30/tasksof ({}) should return a 4xx status but returned 201 ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at api.BaseApiTest.expectClientError(BaseApiTest.java:46)
+	at api.TodosTest.bug4_expected_tasksOfWithoutIdIsRejected(TodosTest.java:707)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+TodosTest.bug4_expected_tasksOfWithoutIdIsRejected
+    POST /todos/30/tasksof ({})                        expected 4xx, received 201   <-- MISMATCH
+    result: FAIL - POST /todos/30/tasksof ({}) should return a 4xx status but returned 201 ==> expected: <true> but was: <false>
+]]></system-out>
+  </testcase>
+  <testcase name="postWithUnknownProjectLinksNothing" classname="api.TodosTest" time="0.112">
+    <system-out><![CDATA[
+TodosTest.postWithUnknownProjectLinksNothing
+    POST /todos/31/tasksof (unknown project)           expected 4xx, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getTasksOfTodoWithoutProjectIsEmpty" classname="api.TodosTest" time="0.11">
+    <system-out><![CDATA[
+TodosTest.getTasksOfTodoWithoutProjectIsEmpty
+    GET /todos/32/tasksof                              expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putWithMalformedJsonLeavesTheTodoUnchanged" classname="api.TodosTest" time="0.128">
+    <system-out><![CDATA[
+TodosTest.putWithMalformedJsonLeavesTheTodoUnchanged
+    PUT /todos/33 (malformed json)                     expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="curlHeadReturnsHeadersOnly" classname="api.TodosTest" time="0.121">
+    <system-out><![CDATA[
+TodosTest.curlHeadReturnsHeadersOnly
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putOnCategoriesReturns405" classname="api.TodosTest" time="0.112">
+    <system-out><![CDATA[
+TodosTest.putOnCategoriesReturns405
+    PUT /todos/34/categories                           expected 405, received 405
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putOnTasksOfReturns405" classname="api.TodosTest" time="0.121">
+    <system-out><![CDATA[
+TodosTest.putOnTasksOfReturns405
+    PUT /todos/35/tasksof                              expected 405, received 405
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="optionsOnTodosListsAllowedMethods" classname="api.TodosTest" time="0.098">
+    <system-out><![CDATA[
+TodosTest.optionsOnTodosListsAllowedMethods
+    OPTIONS /todos                                     expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="bug7_expected_putWithOnlyATitleKeepsTheOtherFields" classname="api.TodosTest" time="0.196">
+    <failure message="expected: &lt;Todo[id=36, title=renamed, doneStatus=true, description=keep me]&gt; but was: &lt;Todo[id=36, title=renamed, doneStatus=false, description=]&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <Todo[id=36, title=renamed, doneStatus=true, description=keep me]> but was: <Todo[id=36, title=renamed, doneStatus=false, description=]>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at api.TodosTest.bug7_expected_putWithOnlyATitleKeepsTheOtherFields(TodosTest.java:741)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+TodosTest.bug7_expected_putWithOnlyATitleKeepsTheOtherFields
+    PUT /todos/36                                      expected 200, received 200
+    result: FAIL - expected: <Todo[id=36, title=renamed, doneStatus=true, description=keep me]> but was: <Todo[id=36, title=renamed, doneStatus=false, description=]>
+]]></system-out>
+  </testcase>
+  <testcase name="getAllTodos" classname="api.TodosTest" time="0.39">
+    <system-out><![CDATA[
+TodosTest.getAllTodos
+    GET /todos                                         expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="filterByTitle" classname="api.TodosTest" time="0.36">
+    <system-out><![CDATA[
+TodosTest.filterByTitle
+    GET /todos?title=filter-0c7a0ced                   expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getAllTodosAsXml" classname="api.TodosTest" time="0.426">
+    <system-out><![CDATA[
+TodosTest.getAllTodosAsXml
+    GET /todos (Accept xml)                            expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getCategoriesOfTodo" classname="api.TodosTest" time="0.41">
+    <system-out><![CDATA[
+TodosTest.getCategoriesOfTodo
+    GET /todos/40/categories                           expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="headTodos" classname="api.TodosTest" time="0.124">
+    <system-out><![CDATA[
+TodosTest.headTodos
+    HEAD /todos                                        expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postWithUnknownCategoryOrNoIdLinksNothing" classname="api.TodosTest" time="0.129">
+    <system-out><![CDATA[
+TodosTest.postWithUnknownCategoryOrNoIdLinksNothing
+    POST /todos/41/categories (unknown category)       expected 4xx, received 404
+    POST /todos/41/categories (no id)                  expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postTwiceCreatesTwoTodos" classname="api.TodosTest" time="0.098">
+    <system-out><![CDATA[
+TodosTest.postTwiceCreatesTwoTodos
+    POST /todos (first)                                expected 201, received 201
+    POST /todos (second)                               expected 201, received 201
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putAndDeleteOnTodosReturn405" classname="api.TodosTest" time="0.099">
+    <system-out><![CDATA[
+TodosTest.putAndDeleteOnTodosReturn405
+    PUT /todos                                         expected 405, received 405
+    DELETE /todos                                      expected 405, received 405
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postWithXmlBody" classname="api.TodosTest" time="0.116">
+    <system-out><![CDATA[
+TodosTest.postWithXmlBody
+    POST /todos (xml)                                  expected 201, received 201
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="filterWithEmptyOrUnmatchedTitleReturnsNoTodos" classname="api.TodosTest" time="0.095">
+    <system-out><![CDATA[
+TodosTest.filterWithEmptyOrUnmatchedTitleReturnsNoTodos
+    GET /todos?title=                                  expected 200, received 200
+    GET /todos?title=<no match>                        expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="bug5_expected_getAndPostOnTasksOfByIdReturn405" classname="api.TodosTest" time="0.114">
+    <failure message="GET /todos/45/tasksof/13 status code ==&gt; expected: &lt;405&gt; but was: &lt;404&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: GET /todos/45/tasksof/13 status code ==> expected: <405> but was: <404>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.TodosTest.bug5_expected_getAndPostOnTasksOfByIdReturn405(TodosTest.java:718)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+TodosTest.bug5_expected_getAndPostOnTasksOfByIdReturn405
+    GET /todos/45/tasksof/13                           expected 405, received 404   <-- MISMATCH
+    result: FAIL - GET /todos/45/tasksof/13 status code ==> expected: <405> but was: <404>
+]]></system-out>
+  </testcase>
+  <testcase name="bug3_expected_categoriesOfUnknownTodoReturns404" classname="api.TodosTest" time="0.098">
+    <failure message="GET /todos/999999/categories status code ==&gt; expected: &lt;404&gt; but was: &lt;200&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: GET /todos/999999/categories status code ==> expected: <404> but was: <200>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.TodosTest.bug3_expected_categoriesOfUnknownTodoReturns404(TodosTest.java:697)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+TodosTest.bug3_expected_categoriesOfUnknownTodoReturns404
+    GET /todos/999999/categories                       expected 404, received 200   <-- MISMATCH
+    result: FAIL - GET /todos/999999/categories status code ==> expected: <404> but was: <200>
+]]></system-out>
+  </testcase>
+  <testcase name="deleteTodoRemovesItFromItsProject" classname="api.TodosTest" time="0.103">
+    <system-out><![CDATA[
+TodosTest.deleteTodoRemovesItFromItsProject
+    DELETE /todos/46                                   expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="bug10_expected_postClearsRelationshipsWithEmptyArrays" classname="api.TodosTest" time="0.117">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at api.TodosTest.bug10_expected_postClearsRelationshipsWithEmptyArrays(TodosTest.java:779)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+TodosTest.bug10_expected_postClearsRelationshipsWithEmptyArrays
+    POST /todos/47 (clear tasksof via POST)            expected 200, received 200
+    result: FAIL - expected: <true> but was: <false>
+]]></system-out>
+  </testcase>
+  <testcase name="headTodoById" classname="api.TodosTest" time="0.099">
+    <system-out><![CDATA[
+TodosTest.headTodoById
+    HEAD /todos/48                                     expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putAndPatchOnTasksOfByIdReturn405" classname="api.TodosTest" time="0.099">
+    <system-out><![CDATA[
+TodosTest.putAndPatchOnTasksOfByIdReturn405
+    PUT /todos/49/tasksof/16                           expected 405, received 405
+    PATCH /todos/49/tasksof/16                         expected 405, received 405
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteLinkKeepsTodoCategoryAndOtherLinks" classname="api.TodosTest" time="0.175">
+    <system-out><![CDATA[
+TodosTest.deleteLinkKeepsTodoCategoryAndOtherLinks
+    DELETE /todos/50/categories/11                     expected 200, received 200
+    GET /todos/50                                      expected 200, received 200
+    GET /categories/11                                 expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postLinksTodoToProjectInBothDirectionsOnlyOnce" classname="api.TodosTest" time="0.189">
+    <system-out><![CDATA[
+TodosTest.postLinksTodoToProjectInBothDirectionsOnlyOnce
+    POST /todos/51/tasksof                             expected 201, received 201
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putWithMalformedXmlLeavesTheTodoUnchanged" classname="api.TodosTest" time="0.181">
+    <system-out><![CDATA[
+TodosTest.putWithMalformedXmlLeavesTheTodoUnchanged
+    PUT /todos/53 (malformed xml)                      expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="bug8_expected_putKeepsTheRelationships" classname="api.TodosTest" time="0.203">
+    <failure message="expected: &lt;[18]&gt; but was: &lt;[]&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <[18]> but was: <[]>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at api.TodosTest.bug8_expected_putKeepsTheRelationships(TodosTest.java:755)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+TodosTest.bug8_expected_putKeepsTheRelationships
+    PUT /todos/54                                      expected 200, received 200
+    result: FAIL - expected: <[18]> but was: <[]>
+]]></system-out>
+  </testcase>
+  <testcase name="optionsOnTodoByIdListsAllowedMethods" classname="api.TodosTest" time="0.091">
+    <system-out><![CDATA[
+TodosTest.optionsOnTodoByIdListsAllowedMethods
+    OPTIONS /todos/55                                  expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="curlGetFiltersTodosByTitle" classname="api.TodosTest" time="0.099">
+    <system-out><![CDATA[
+TodosTest.curlGetFiltersTodosByTitle
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putAndPostOnUnknownTodoReturn404" classname="api.TodosTest" time="0.129">
+    <system-out><![CDATA[
+TodosTest.putAndPostOnUnknownTodoReturn404
+    PUT /todos/999999                                  expected 404, received 404
+    POST /todos/999999                                 expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postWithXmlBodyAndXmlResponse" classname="api.TodosTest" time="0.09">
+    <system-out><![CDATA[
+TodosTest.postWithXmlBodyAndXmlResponse
+    POST /todos (xml in, xml out)                      expected 201, received 201
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postAmendWithXmlBodyAndXmlResponse" classname="api.TodosTest" time="0.107">
+    <system-out><![CDATA[
+TodosTest.postAmendWithXmlBodyAndXmlResponse
+    POST /todos/59 (xml in, xml out)                   expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteWithInjectionInTodoIdReturns400" classname="api.TodosTest" time="0.114">
+    <system-out><![CDATA[
+TodosTest.deleteWithInjectionInTodoIdReturns400
+    DELETE /todos/1%3Bls/tasksof/19                    expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getCategoriesOfTodoWithoutAnyIsEmpty" classname="api.TodosTest" time="0.228">
+    <system-out><![CDATA[
+TodosTest.getCategoriesOfTodoWithoutAnyIsEmpty
+    GET /todos/61/categories                           expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="bug1_expected_arrayTitleIsRejected" classname="api.TodosTest" time="0.248">
+    <failure message="POST /todos (title is an array) status code ==&gt; expected: &lt;400&gt; but was: &lt;201&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: POST /todos (title is an array) status code ==> expected: <400> but was: <201>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.TodosTest.bug1_expected_arrayTitleIsRejected(TodosTest.java:680)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+TodosTest.bug1_expected_arrayTitleIsRejected
+    POST /todos (title is an array)                    expected 400, received 201   <-- MISMATCH
+    result: FAIL - POST /todos (title is an array) status code ==> expected: <400> but was: <201>
+]]></system-out>
+  </testcase>
+  <testcase name="bug2_expected_tasksOfUnknownTodoReturns404" classname="api.TodosTest" time="0.218">
+    <failure message="GET /todos/999999/tasksof status code ==&gt; expected: &lt;404&gt; but was: &lt;200&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: GET /todos/999999/tasksof status code ==> expected: <404> but was: <200>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.TodosTest.bug2_expected_tasksOfUnknownTodoReturns404(TodosTest.java:689)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+TodosTest.bug2_expected_tasksOfUnknownTodoReturns404
+    GET /todos/999999/tasksof                          expected 404, received 200   <-- MISMATCH
+    result: FAIL - GET /todos/999999/tasksof status code ==> expected: <404> but was: <200>
+]]></system-out>
+  </testcase>
+  <testcase name="getTodoById" classname="api.TodosTest" time="0.096">
+    <system-out><![CDATA[
+TodosTest.getTodoById
+    GET /todos/63                                      expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteLinkKeepsTodoProjectAndOtherLinks" classname="api.TodosTest" time="0.113">
+    <system-out><![CDATA[
+TodosTest.deleteLinkKeepsTodoProjectAndOtherLinks
+    DELETE /todos/64/tasksof/20                        expected 200, received 200
+    GET /todos/64                                      expected 200, received 200
+    GET /projects/20                                   expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="docsPageIsServedAsHtml" classname="api.TodosTest" time="0.082">
+    <system-out><![CDATA[
+TodosTest.docsPageIsServedAsHtml
+    GET /docs                                          expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getTasksOfTodo" classname="api.TodosTest" time="0.093">
+    <system-out><![CDATA[
+TodosTest.getTasksOfTodo
+    GET /todos/65/tasksof                              expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="filterByDoneStatus" classname="api.TodosTest" time="0.097">
+    <system-out><![CDATA[
+TodosTest.filterByDoneStatus
+    GET /todos?doneStatus=true                         expected 200, received 200
+    GET /todos?doneStatus=false                        expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postProjectToUnknownTodoIsRejected" classname="api.TodosTest" time="0.079">
+    <system-out><![CDATA[
+TodosTest.postProjectToUnknownTodoIsRejected
+    POST /todos/999999/tasksof                         expected 4xx, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteLinkAgainOrForUnrelatedProjectReturns404" classname="api.TodosTest" time="0.095">
+    <system-out><![CDATA[
+TodosTest.deleteLinkAgainOrForUnrelatedProjectReturns404
+    DELETE /todos/68/tasksof/24 (again)                expected 404, received 404
+    DELETE /todos/68/tasksof/25                        expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putAndPostWithEmptyTitleLeaveTheTodoUnchanged" classname="api.TodosTest" time="0.106">
+    <system-out><![CDATA[
+TodosTest.putAndPostWithEmptyTitleLeaveTheTodoUnchanged
+    PUT /todos/69 (empty title)                        expected 400, received 400
+    POST /todos/69 (empty title)                       expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putAmendsTheTodo" classname="api.TodosTest" time="0.101">
+    <system-out><![CDATA[
+TodosTest.putAmendsTheTodo
+    PUT /todos/70                                      expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getTodoByIdAsXml" classname="api.TodosTest" time="0.104">
+    <system-out><![CDATA[
+TodosTest.getTodoByIdAsXml
+    GET /todos/71 (Accept xml)                         expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="optionsOnRelationshipsListsAllowedMethods" classname="api.TodosTest" time="0.089">
+    <system-out><![CDATA[
+TodosTest.optionsOnRelationshipsListsAllowedMethods
+    OPTIONS /todos/72/tasksof                          expected 200, received 200
+    OPTIONS /todos/72/categories                       expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="bug9_expected_projectsTasksOfNonExistentProjectReturns404" classname="api.TodosTest" time="0.085">
+    <failure message="GET /projects/999999/tasks (non-existent project) status code ==&gt; expected: &lt;404&gt; but was: &lt;200&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: GET /projects/999999/tasks (non-existent project) status code ==> expected: <404> but was: <200>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.TodosTest.bug9_expected_projectsTasksOfNonExistentProjectReturns404(TodosTest.java:765)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+TodosTest.bug9_expected_projectsTasksOfNonExistentProjectReturns404
+    GET /projects/999999/tasks (non-existent project)  expected 404, received 200   <-- MISMATCH
+    result: FAIL - GET /projects/999999/tasks (non-existent project) status code ==> expected: <404> but was: <200>
+]]></system-out>
+  </testcase>
+  <testcase name="curlGetOfUnknownTodoReturns404" classname="api.TodosTest" time="0.09">
+    <system-out><![CDATA[
+TodosTest.curlGetOfUnknownTodoReturns404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getAndHeadUnknownTodoReturn404" classname="api.TodosTest" time="0.071">
+    <system-out><![CDATA[
+TodosTest.getAndHeadUnknownTodoReturn404
+    GET /todos/-1                                      expected 404, received 404
+    HEAD /todos/-1                                     expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postAmendsOnlyTheGivenField" classname="api.TodosTest" time="0.095">
+    <system-out><![CDATA[
+TodosTest.postAmendsOnlyTheGivenField
+    POST /todos/73                                     expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="bug6_expected_methodOverrideHeaderIsIgnored" classname="api.TodosTest" time="0.097">
+    <failure message="PUT /todos/74/categories (override POST) status code ==&gt; expected: &lt;405&gt; but was: &lt;201&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: PUT /todos/74/categories (override POST) status code ==> expected: <405> but was: <201>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.TodosTest.bug6_expected_methodOverrideHeaderIsIgnored(TodosTest.java:729)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
+TodosTest.bug6_expected_methodOverrideHeaderIsIgnored
+    PUT /todos/74/categories (override POST)           expected 405, received 201   <-- MISMATCH
+    result: FAIL - PUT /todos/74/categories (override POST) status code ==> expected: <405> but was: <201>
+]]></system-out>
+  </testcase>
+  <testcase name="putWithJsonBodyAndXmlResponse" classname="api.TodosTest" time="0.16">
+    <system-out><![CDATA[
+TodosTest.putWithJsonBodyAndXmlResponse
+    PUT /todos/75 (json in, xml out)                   expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putWithXmlBody" classname="api.TodosTest" time="0.129">
+    <system-out><![CDATA[
+TodosTest.putWithXmlBody
+    PUT /todos/76 (xml)                                expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteLinkAgainOrForUnrelatedCategoryReturns404" classname="api.TodosTest" time="0.084">
+    <system-out><![CDATA[
+TodosTest.deleteLinkAgainOrForUnrelatedCategoryReturns404
+    DELETE /todos/77/categories/15 (again)             expected 404, received 404
+    DELETE /todos/77/categories/16                     expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getCategoriesAsXml" classname="api.TodosTest" time="0.104">
+    <system-out><![CDATA[
+TodosTest.getCategoriesAsXml
+    GET /todos/78/categories (Accept xml)              expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="patchIsNotAllowedAndChangesNothing" classname="api.TodosTest" time="0.168">
+    <system-out><![CDATA[
+TodosTest.patchIsNotAllowedAndChangesNothing
+    PATCH /todos                                       expected 405, received 405
+    PATCH /todos/79                                    expected 405, received 405
+    PATCH /todos/999999                                expected 405, received 405
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postWithInvalidBodyIsRejectedAndCreatesNothing" classname="api.TodosTest" time="0.14">
+    <system-out><![CDATA[
+TodosTest.postWithInvalidBodyIsRejectedAndCreatesNothing
+    POST /todos {"doneStatus":false,"description":"no title"} expected 400, received 400
+    POST /todos {"title":""}                           expected 400, received 400
+    POST /todos {"id":"999","title":"has an id"}       expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+</testsuite>

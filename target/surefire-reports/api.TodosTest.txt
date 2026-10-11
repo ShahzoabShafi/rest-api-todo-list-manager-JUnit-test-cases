@@ -1,0 +1,134 @@
+-------------------------------------------------------------------------------
+Test set: api.TodosTest
+-------------------------------------------------------------------------------
+Tests run: 75, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 10.82 s <<< FAILURE! -- in api.TodosTest
+api.TodosTest.bug4_expected_tasksOfWithoutIdIsRejected -- Time elapsed: 0.107 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: POST /todos/30/tasksof ({}) should return a 4xx status but returned 201 ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at api.BaseApiTest.expectClientError(BaseApiTest.java:46)
+	at api.TodosTest.bug4_expected_tasksOfWithoutIdIsRejected(TodosTest.java:707)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.TodosTest.bug7_expected_putWithOnlyATitleKeepsTheOtherFields -- Time elapsed: 0.196 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Todo[id=36, title=renamed, doneStatus=true, description=keep me]> but was: <Todo[id=36, title=renamed, doneStatus=false, description=]>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at api.TodosTest.bug7_expected_putWithOnlyATitleKeepsTheOtherFields(TodosTest.java:741)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.TodosTest.bug5_expected_getAndPostOnTasksOfByIdReturn405 -- Time elapsed: 0.114 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: GET /todos/45/tasksof/13 status code ==> expected: <405> but was: <404>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.TodosTest.bug5_expected_getAndPostOnTasksOfByIdReturn405(TodosTest.java:718)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.TodosTest.bug3_expected_categoriesOfUnknownTodoReturns404 -- Time elapsed: 0.098 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: GET /todos/999999/categories status code ==> expected: <404> but was: <200>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.TodosTest.bug3_expected_categoriesOfUnknownTodoReturns404(TodosTest.java:697)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.TodosTest.bug10_expected_postClearsRelationshipsWithEmptyArrays -- Time elapsed: 0.117 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at api.TodosTest.bug10_expected_postClearsRelationshipsWithEmptyArrays(TodosTest.java:779)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.TodosTest.bug8_expected_putKeepsTheRelationships -- Time elapsed: 0.203 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <[18]> but was: <[]>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at api.TodosTest.bug8_expected_putKeepsTheRelationships(TodosTest.java:755)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.TodosTest.bug1_expected_arrayTitleIsRejected -- Time elapsed: 0.248 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: POST /todos (title is an array) status code ==> expected: <400> but was: <201>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.TodosTest.bug1_expected_arrayTitleIsRejected(TodosTest.java:680)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.TodosTest.bug2_expected_tasksOfUnknownTodoReturns404 -- Time elapsed: 0.218 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: GET /todos/999999/tasksof status code ==> expected: <404> but was: <200>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.TodosTest.bug2_expected_tasksOfUnknownTodoReturns404(TodosTest.java:689)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.TodosTest.bug9_expected_projectsTasksOfNonExistentProjectReturns404 -- Time elapsed: 0.085 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: GET /projects/999999/tasks (non-existent project) status code ==> expected: <404> but was: <200>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.TodosTest.bug9_expected_projectsTasksOfNonExistentProjectReturns404(TodosTest.java:765)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.TodosTest.bug6_expected_methodOverrideHeaderIsIgnored -- Time elapsed: 0.097 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: PUT /todos/74/categories (override POST) status code ==> expected: <405> but was: <201>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
+	at api.TodosTest.bug6_expected_methodOverrideHeaderIsIgnored(TodosTest.java:729)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
