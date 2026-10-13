@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: api.ProjectsTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.991 s -- in api.ProjectsTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.205 s -- in api.ProjectsTest

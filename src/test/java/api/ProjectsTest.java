@@ -1,11 +1,12 @@
 package api;
 
 import io.restassured.response.Response;
+import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
-import java.util.Objects;
 
+import static api.Payloads.uniqueTitle;
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -68,7 +69,7 @@ class ProjectsTest extends BaseApiTest {
         // delete the project with the same id again to check if it throws an error
         response = api.delete("/projects/" + id);
         // 404 proves that the id was deleted previously
-        expectStatus(404, "DELETE /projects/" + id, response);
+        expectStatus(404, "DELETE /projects/" + id + "(again)", response);
 
     }
 
@@ -98,5 +99,91 @@ class ProjectsTest extends BaseApiTest {
         Response deleteResponse = api.delete("/projects");
         expectStatus(405, "DELETE /projects", deleteResponse);
     }
+
+    @Test
+    void getAllProjectsAsXml() {
+        String id = api.createProject(uniqueTitle("xml-list"));
+        Response allProjectsAsXmlResponse = api.getAs("/projects", ContentType.XML);
+        expectStatus(200, "GET /projects as XML", allProjectsAsXmlResponse);
+        assertTrue(allProjectsAsXmlResponse.getContentType().contains("xml"));
+        assertTrue(allProjectsAsXmlResponse.xmlPath().getList("projects.project.id").contains(id));
+    }
+
+    @Test
+    void headProjects() {
+        Response headResponse = api.head("/projects");
+        expectStatus(200, "HEAD /projects", headResponse);
+        assertTrue(headResponse.asString().isEmpty());
+    }
+
+    @Test
+        // command line query
+    void filterProjectsByQueryParameters() {
+        //create two new project with one active and the other not active
+        Response project1Created = api.postJson("/projects", "{\"title\":\"New Project 1\",\"description\":\"keep me\",\"active\":true}");
+        expectStatus(201, "POST /projects", project1Created);
+        String project1Id = project1Created.jsonPath().getString("id");
+
+        Response project2Created = api.postJson("/projects", "{\"title\":\"New Project 1\",\"description\":\"keep me\",\"active\":false}");
+        expectStatus(201, "POST /projects", project2Created);
+        String project2Id = project2Created.jsonPath().getString("id");
+
+        Response response = api.getFiltered("/projects", "active", "true");
+        expectStatus(200, "GET /projects?active=true", response);
+
+        assertTrue(response.jsonPath().getList("projects.id").contains(project1Id));
+        assertFalse(response.jsonPath().getList("projects.id").contains(project2Id));
+    }
+
+    @Test
+    void postWithXmlBodyAndXmlResponse() {
+        String title = uniqueTitle("xml-both");
+        Response response = api.request()
+                .contentType(ContentType.XML)
+                .accept(ContentType.XML)
+                .body("<project><title>" + title + "</title></project>")
+                .post(api.url("/projects"));
+        expectStatus(201, "POST /projects (xml in, xml out)", response);
+        assertTrue(response.getContentType().contains("xml"));
+        assertEquals(title, response.xmlPath().getString("projects.title"));
+    }
+
+    @Test
+    void postWithIdOrInvalidBooleanIsRejectedAndCreatesNothing() {
+        int noOfProjectIdsBefore = api.projectIds().size();
+        Response project1CreateResponse = api.postJson("/projects", """
+                {
+                "id":"99",
+                "title":"x"
+                }
+                """);
+        expectStatus(400, "POST /projects (client id)", project1CreateResponse);
+        Response project2CreateResponse = api.postJson("/projects", """
+                {
+                "title":"x",
+                "active":"yes",
+                }
+                """);
+        expectStatus(400, "POST /projects (active not boolean)", project2CreateResponse);
+        int noOfProjectIdsAfter = api.projectIds().size();
+        assertEquals(noOfProjectIdsBefore, noOfProjectIdsAfter);
+    }
+
+    @Test
+    void headProjectById() {
+        // create a project
+        Response projectCreatedResponse = api.postJson("/projects", """
+                {
+                "title":"project 1",
+                "Description":"lorem ipsum",
+                "active": true
+                }
+                """);
+        expectStatus(201, "POST /projects project created", projectCreatedResponse);
+        String projectId = projectCreatedResponse.jsonPath().getString("id");
+        Response headResponse = api.head("/projects/" + projectId);
+        expectStatus(200, "HEAD /projects/" + projectId, headResponse);
+    }
+
 
 }
