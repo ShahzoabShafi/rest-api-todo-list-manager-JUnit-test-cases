@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: api.KnownBugsTest
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 4.295 s <<< FAILURE! -- in api.KnownBugsTest
-api.KnownBugsTest.bug4_expected_tasksOfWithoutIdIsRejected -- Time elapsed: 0.274 s <<< FAILURE!
+Tests run: 16, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 4.386 s <<< FAILURE! -- in api.KnownBugsTest
+api.KnownBugsTest.bug4_expected_tasksOfWithoutIdIsRejected -- Time elapsed: 0.255 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: POST /todos/4/tasksof ({}) should return a 4xx status but returned 201 ==> expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -15,7 +15,7 @@ org.opentest4j.AssertionFailedError: POST /todos/4/tasksof ({}) should return a 
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 
-api.KnownBugsTest.bug7_expected_putWithOnlyATitleKeepsTheOtherFields -- Time elapsed: 0.232 s <<< FAILURE!
+api.KnownBugsTest.bug7_expected_putWithOnlyATitleKeepsTheOtherFields -- Time elapsed: 0.209 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <Todo[id=5, title=renamed, doneStatus=true, description=keep me]> but was: <Todo[id=5, title=renamed, doneStatus=false, description=]>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -28,20 +28,7 @@ org.opentest4j.AssertionFailedError: expected: <Todo[id=5, title=renamed, doneSt
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 
-api.KnownBugsTest.bug2_actual_tasksOfUnknownTodoReturns200WithNoProjects -- Time elapsed: 0.161 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at api.KnownBugsTest.bug2_actual_tasksOfUnknownTodoReturns200WithNoProjects(KnownBugsTest.java:54)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
-api.KnownBugsTest.bug4_actual_tasksOfWithoutIdLinksEveryProject -- Time elapsed: 0.213 s <<< FAILURE!
+api.KnownBugsTest.bug4_actual_tasksOfWithoutIdLinksEveryProject -- Time elapsed: 0.220 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <[1, 5, 6]> but was: <[6]>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -54,7 +41,7 @@ org.opentest4j.AssertionFailedError: expected: <[1, 5, 6]> but was: <[6]>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 
-api.KnownBugsTest.bug5_expected_getAndPostOnTasksOfByIdReturn405 -- Time elapsed: 0.180 s <<< FAILURE!
+api.KnownBugsTest.bug5_expected_getAndPostOnTasksOfByIdReturn405 -- Time elapsed: 0.171 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: GET /todos/9/tasksof/7 status code ==> expected: <405> but was: <404>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -67,7 +54,7 @@ org.opentest4j.AssertionFailedError: GET /todos/9/tasksof/7 status code ==> expe
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 
-api.KnownBugsTest.bug3_expected_categoriesOfUnknownTodoReturns404 -- Time elapsed: 0.144 s <<< FAILURE!
+api.KnownBugsTest.bug3_expected_categoriesOfUnknownTodoReturns404 -- Time elapsed: 0.140 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: GET /todos/999999/categories status code ==> expected: <404> but was: <200>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -80,7 +67,7 @@ org.opentest4j.AssertionFailedError: GET /todos/999999/categories status code ==
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 
-api.KnownBugsTest.bug8_expected_putKeepsTheRelationships -- Time elapsed: 0.211 s <<< FAILURE!
+api.KnownBugsTest.bug8_expected_putKeepsTheRelationships -- Time elapsed: 0.210 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <[8]> but was: <[]>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -93,7 +80,7 @@ org.opentest4j.AssertionFailedError: expected: <[8]> but was: <[]>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 
-api.KnownBugsTest.bug1_expected_arrayTitleIsRejected -- Time elapsed: 0.169 s <<< FAILURE!
+api.KnownBugsTest.bug1_expected_arrayTitleIsRejected -- Time elapsed: 0.147 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: POST /todos (title is an array) status code ==> expected: <400> but was: <201>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -106,7 +93,7 @@ org.opentest4j.AssertionFailedError: POST /todos (title is an array) status code
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 
-api.KnownBugsTest.bug2_expected_tasksOfUnknownTodoReturns404 -- Time elapsed: 0.122 s <<< FAILURE!
+api.KnownBugsTest.bug2_expected_tasksOfUnknownTodoReturns404 -- Time elapsed: 0.142 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: GET /todos/999999/tasksof status code ==> expected: <404> but was: <200>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -119,7 +106,7 @@ org.opentest4j.AssertionFailedError: GET /todos/999999/tasksof status code ==> e
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 
-api.KnownBugsTest.bug6_expected_methodOverrideHeaderIsIgnored -- Time elapsed: 0.147 s <<< FAILURE!
+api.KnownBugsTest.bug6_expected_methodOverrideHeaderIsIgnored -- Time elapsed: 0.150 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: PUT /todos/13/categories (override POST) status code ==> expected: <405> but was: <201>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
