@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="api.UndocumentedApiTest" time="0.973" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="api.UndocumentedApiTest" time="1.137" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire/surefirebooter-20261011183904060_3.jar /home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire 2026-10-11T18-39-03_995-jvmRun1 surefire-20261011183904060_1tmp surefire_0-20261011183904060_2tmp"/>
+    <property name="sun.java.command" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire/surefirebooter-20261012221244439_3.jar /home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire 2026-10-12T22-12-44_374-jvmRun1 surefire-20261012221244439_1tmp surefire_0-20261012221244439_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/test-classes:/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/classes:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.0/junit-jupiter-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/home/shahzoabshafi/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.0/junit-jupiter-engine-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/platform/junit-platform-engine/1.11.0/junit-platform-engine-1.11.0.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/shahzoabshafi/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/shahzoabshafi/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/shahzoabshafi/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/shahzoabshafi/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire/surefirebooter-20261011183904060_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire/surefirebooter-20261012221244439_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.12.1+1-1-22.04.4-Ubuntu"/>
     <property name="user.name" value="shahzoabshafi"/>
@@ -54,54 +54,54 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="swaggerFileDescribesTheTodoEndpoints" classname="api.UndocumentedApiTest" time="0.176">
+  <testcase name="swaggerFileDescribesTheTodoEndpoints" classname="api.UndocumentedApiTest" time="0.187">
     <system-out><![CDATA[
 UndocumentedApiTest.swaggerFileDescribesTheTodoEndpoints
     GET /docs/swagger                                  expected 200, received 200
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="unknownQueryParameterIsIgnored" classname="api.UndocumentedApiTest" time="0.137">
+  <testcase name="unknownQueryParameterIsIgnored" classname="api.UndocumentedApiTest" time="0.344">
     <system-out><![CDATA[
 UndocumentedApiTest.unknownQueryParameterIsIgnored
     GET /todos?randomParameter=test                    expected 200, received 200
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="optionsOnTodosListsAllowedMethods" classname="api.UndocumentedApiTest" time="0.115">
+  <testcase name="optionsOnTodosListsAllowedMethods" classname="api.UndocumentedApiTest" time="0.124">
     <system-out><![CDATA[
 UndocumentedApiTest.optionsOnTodosListsAllowedMethods
     OPTIONS /todos                                     expected 200, received 200
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="optionsOnTodoByIdListsAllowedMethods" classname="api.UndocumentedApiTest" time="0.13">
+  <testcase name="optionsOnTodoByIdListsAllowedMethods" classname="api.UndocumentedApiTest" time="0.113">
     <system-out><![CDATA[
 UndocumentedApiTest.optionsOnTodoByIdListsAllowedMethods
-    OPTIONS /todos/15                                  expected 200, received 200
+    OPTIONS /todos/19                                  expected 200, received 200
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="docsPageIsServedAsHtml" classname="api.UndocumentedApiTest" time="0.115">
+  <testcase name="docsPageIsServedAsHtml" classname="api.UndocumentedApiTest" time="0.104">
     <system-out><![CDATA[
 UndocumentedApiTest.docsPageIsServedAsHtml
     GET /docs                                          expected 200, received 200
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="optionsOnRelationshipsListsAllowedMethods" classname="api.UndocumentedApiTest" time="0.13">
+  <testcase name="optionsOnRelationshipsListsAllowedMethods" classname="api.UndocumentedApiTest" time="0.125">
     <system-out><![CDATA[
 UndocumentedApiTest.optionsOnRelationshipsListsAllowedMethods
-    OPTIONS /todos/16/tasksof                          expected 200, received 200
-    OPTIONS /todos/16/categories                       expected 200, received 200
+    OPTIONS /todos/20/tasksof                          expected 200, received 200
+    OPTIONS /todos/20/categories                       expected 200, received 200
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="patchIsNotAllowedAndChangesNothing" classname="api.UndocumentedApiTest" time="0.168">
+  <testcase name="patchIsNotAllowedAndChangesNothing" classname="api.UndocumentedApiTest" time="0.137">
     <system-out><![CDATA[
 UndocumentedApiTest.patchIsNotAllowedAndChangesNothing
     PATCH /todos                                       expected 405, received 405
-    PATCH /todos/17                                    expected 405, received 405
+    PATCH /todos/21                                    expected 405, received 405
     PATCH /todos/999999                                expected 405, received 405
     result: PASS
 ]]></system-out>

@@ -1,1 +1,11 @@
+api/BaseApiTest.class
+api/ResultReporter.class
+api/TodoApi.class
 api/ProjectsTest.class
+api/SystemSnapshot.class
+api/KnownBugsTest.class
+api/CommandLineQueryTest.class
+api/UndocumentedApiTest.class
+api/TodosTest.class
+api/Payloads.class
+api/Todo.class
