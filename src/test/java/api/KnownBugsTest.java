@@ -10,8 +10,7 @@ import java.util.List;
 import java.util.Set;
 
 import static api.Payloads.uniqueTitle;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Every bug has two tests. The "expected" one asserts what the documentation says and fails
@@ -48,10 +47,13 @@ class KnownBugsTest extends BaseApiTest {
 
     @Test
     @Tag("actual-behavior")
-    void bug2_actual_tasksOfUnknownTodoReturns200WithNoProjects() {
+    void bug2_actual_tasksOfUnknownTodoReturns200WithProjectsOfOtherTodos() {
+        String todoId = api.createTodo(uniqueTitle("other-todo"));
+        String projectId = api.createProject("office");
+        api.linkTodoToProject(todoId, projectId);
         Response response = api.get("/todos/999999/tasksof");
         expectStatus(200, "GET /todos/999999/tasksof", response);
-        assertTrue(response.jsonPath().getList("projects").isEmpty());
+        assertFalse(response.jsonPath().getList("projects").isEmpty());
     }
 
     // bug 3: categories of an unknown todo
@@ -82,12 +84,17 @@ class KnownBugsTest extends BaseApiTest {
 
     @Test
     @Tag("actual-behavior")
-    void bug4_actual_tasksOfWithoutIdLinksEveryProject() {
+    void bug4_actual_tasksOfWithoutIdCreatesAnEmptyProjectAndLinksIt() {
         String todoId = api.createTodo(uniqueTitle("no-project-id"));
-        api.createProject("second project");
+        Set<String> projectsBefore = new HashSet<>(api.projectIds());
         expectStatus(201, "POST /todos/" + todoId + "/tasksof ({})",
                 api.postJson("/todos/" + todoId + "/tasksof", "{}"));
-        assertEquals(new HashSet<>(api.projectIds()), new HashSet<>(api.projectIdsOfTodo(todoId)));
+        Set<String> createdProjects = new HashSet<>(api.projectIds());
+        createdProjects.removeAll(projectsBefore);
+        assertEquals(1, createdProjects.size(), "exactly one new project should have been created");
+        String newProjectId = createdProjects.iterator().next();
+        assertEquals("", api.get("/projects/" + newProjectId).jsonPath().getString("projects[0].title"));
+        assertEquals(List.of(newProjectId), api.projectIdsOfTodo(todoId));
     }
 
     // bug 5: GET and POST on /todos/:id/tasksof/:id
@@ -174,6 +181,53 @@ class KnownBugsTest extends BaseApiTest {
         expectStatus(200, "PUT /todos/" + id, api.putJson("/todos/" + id, Payloads.todo("renamed")));
         assertTrue(api.projectIdsOfTodo(id).isEmpty());
         assertTrue(api.categoryIdsOfTodo(id).isEmpty());
+    }
+
+    // bug 9: tasks of an unknown project
+
+    @Test
+    @Tag("expected-behavior")
+    void bug9_expected_projectsTasksOfNonExistentProjectReturns404() {
+        expectStatus(404, "GET /projects/999999/tasks (non-existent project)", api.get("/projects/999999/tasks"));
+    }
+
+    @Test
+    @Tag("actual-behavior")
+    void bug9_actual_projectsTasksOfNonExistentProjectReturns200WithTodosOfOtherProjects() {
+        String todoId = api.createTodo(uniqueTitle("other-project-todo"));
+        String projectId = api.createProject("office");
+        api.linkTodoToProject(todoId, projectId);
+        Response response = api.get("/projects/999999/tasks");
+        expectStatus(200, "GET /projects/999999/tasks (non-existent project)", response);
+        assertFalse(response.jsonPath().getList("todos").isEmpty());
+    }
+
+    // bug 10: POST with an empty tasksof array
+
+    @Test
+    @Tag("expected-behavior")
+    void bug10_expected_postClearsRelationshipsWithEmptyArrays() {
+        String todoId = api.createTodo(uniqueTitle("post-clear-links"));
+        String projectId = api.createProject("office project");
+        api.linkTodoToProject(todoId, projectId);
+        Response response = api.postJson("/todos/" + todoId, postBodyWithEmptyTasksOf(todoId));
+        expectStatus(200, "POST /todos/" + todoId + " (clear tasksof via POST)", response);
+        assertTrue(api.projectIdsOfTodo(todoId).isEmpty());
+    }
+
+    @Test
+    @Tag("actual-behavior")
+    void bug10_actual_postWithEmptyArraysKeepsTheRelationships() {
+        String todoId = api.createTodo(uniqueTitle("post-keeps-links"));
+        String projectId = api.createProject("office project");
+        api.linkTodoToProject(todoId, projectId);
+        Response response = api.postJson("/todos/" + todoId, postBodyWithEmptyTasksOf(todoId));
+        expectStatus(200, "POST /todos/" + todoId + " (empty tasksof array)", response);
+        assertEquals(List.of(projectId), api.projectIdsOfTodo(todoId));
+    }
+
+    private String postBodyWithEmptyTasksOf(String todoId) {
+        return "{\"title\":\"" + api.fetchTodo(todoId).title() + "\",\"tasksof\":[]}";
     }
 
     private String linkedTasksOfPath() {
