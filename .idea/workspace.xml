@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad915b1a-6d5d-4485-84a2-012be536dc39" name="Changes" comment="ProjectsTest: first 6 tests" />
+    <list default="true" id="ad915b1a-6d5d-4485-84a2-012be536dc39" name="Changes" comment="workspace xml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/KnownBugsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/KnownBugsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/ProjectsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/ProjectsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-api.KnownBugsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-api.KnownBugsTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-api.ProjectsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-api.ProjectsTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/api.KnownBugsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/api.KnownBugsTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/api.ProjectsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/api.ProjectsTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api/KnownBugsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/api/KnownBugsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api/ProjectsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/api/ProjectsTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,6 +100,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Yessine files" />
     <MESSAGE value="ProjectsTest: first 6 tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="ProjectsTest: first 6 tests" />
+    <MESSAGE value="workspace xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace xml" />
   </component>
 </project>

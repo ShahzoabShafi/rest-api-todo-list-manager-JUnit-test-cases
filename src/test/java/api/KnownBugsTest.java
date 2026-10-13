@@ -244,4 +244,40 @@ class KnownBugsTest extends BaseApiTest {
                 .body(Payloads.idOnly(categoryId))
                 .put(api.url("/todos/" + todoId + "/categories"));
     }
+
+    // Bug 11: Only a title resets the description and removes the project's relationships to its todos
+
+    @Test
+    @Tag("expected-behavior")
+    void bug11_expected_putWithOnlyATitleKeepsTheOtherFields() {
+        //create a new project
+        Response projectCreated = api.postJson("/projects", "{\"title\":\"New Project\",\"description\":\"keep me\",\"active\":true}");
+        expectStatus(201, "POST /projects", projectCreated);
+        String id = projectCreated.jsonPath().getString("id");
+        // rename the project using the id
+        Response renameResponse = api.putJson("/projects/" + id, "{\"title\":\"New Project renamed\"}");
+        expectStatus(200, "PUT /projects/" + id + " Project renamed", renameResponse);
+        // get data for the id
+        Response getProjects = api.get("/projects/" + id);
+        // check if the project was renamed and the description is still the same
+        assertEquals("New Project renamed", getProjects.jsonPath().getString("projects[0].title"));
+        assertEquals("keep me", getProjects.jsonPath().getString("projects[0].description"));
+    }
+
+    @Test
+    @Tag("actual-behavior")
+    void bug11_actual_putWithOnlyATitleResetsTheOtherFields() {
+        //create a new project
+        Response projectCreated = api.postJson("/projects", "{\"title\":\"New Project\",\"description\":\"keep me\",\"active\":true}");
+        expectStatus(201, "POST /projects", projectCreated);
+        String id = projectCreated.jsonPath().getString("id");
+        // rename the project using the id
+        Response renameResponse = api.putJson("/projects/" + id, "{\"title\":\"New Project renamed\"}");
+        expectStatus(200, "PUT /projects/" + id + " Project renamed", renameResponse);
+        // get data for the id
+        Response getProjects = api.get("/projects/" + id);
+        // check if the project was renamed and the description is empty
+        assertEquals("false",getProjects.jsonPath().getString("projects[0].active"));
+        assertEquals("", getProjects.jsonPath().getString("projects[0].description"));
+    }
 }
