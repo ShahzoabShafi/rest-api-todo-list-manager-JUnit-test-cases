@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="api.ProjectsTest" time="6.791" tests="35" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="api.ProjectsTest" time="4.089" tests="35" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,9 +13,8 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire/surefirebooter-20261013162525409_3.jar /home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire 2026-10-13T16-25-25_354-jvmRun1 surefire-20261013162525409_1tmp surefire_0-20261013162525409_2tmp"/>
+    <property name="sun.java.command" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire/surefirebooter-20261013193605583_3.jar /home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire 2026-10-13T19-36-05_523-jvmRun1 surefire-20261013193605583_1tmp surefire_0-20261013193605583_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="ProjectsTest,UndocumentedApiTest,CommandLineQueryTest"/>
     <property name="surefire.test.class.path" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/test-classes:/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/classes:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.0/junit-jupiter-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/home/shahzoabshafi/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.0/junit-jupiter-engine-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/platform/junit-platform-engine/1.11.0/junit-platform-engine-1.11.0.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/shahzoabshafi/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/shahzoabshafi/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/shahzoabshafi/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/shahzoabshafi/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/shahzoabshafi"/>
@@ -29,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire/surefirebooter-20261013162525409_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire/surefirebooter-20261013193605583_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.12.1+1-1-22.04.4-Ubuntu"/>
     <property name="user.name" value="shahzoabshafi"/>
@@ -55,24 +54,66 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="postWithMalformedXmlIsRejected" classname="api.ProjectsTest" time="1.391">
-    <system-out><![CDATA[Random order seed: not set
-
+  <testcase name="postWithXmlBodyAndXmlResponse" classname="api.ProjectsTest" time="0.234">
+    <system-out><![CDATA[
+ProjectsTest.postWithXmlBodyAndXmlResponse
+    POST /projects (xml in, xml out)                   expected 201, received 201
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putAndPatchOnCategoriesReturn405" classname="api.ProjectsTest" time="0.147">
+    <system-out><![CDATA[
+ProjectsTest.putAndPatchOnCategoriesReturn405
+    PUT categories                                     expected 405, received 405
+    PATCH categories                                   expected 405, received 405
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="linkUnknownCategoryOrToUnknownProjectReturns404" classname="api.ProjectsTest" time="0.154">
+    <system-out><![CDATA[
+ProjectsTest.linkUnknownCategoryOrToUnknownProjectReturns404
+    link unknown category                              expected 404, received 404
+    link to unknown project                            expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putOnTaskLinkReturns405" classname="api.ProjectsTest" time="0.162">
+    <system-out><![CDATA[
+ProjectsTest.putOnTaskLinkReturns405
+    POST /projects/312/tasks                           expected 201, received 201
+    PUT /projects/312/tasks/248                        expected 405, received 405
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getAllProjects" classname="api.ProjectsTest" time="0.23">
+    <system-out><![CDATA[
+ProjectsTest.getAllProjects
+    GET /projects                                      expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postWithMalformedXmlIsRejected" classname="api.ProjectsTest" time="0.088">
+    <system-out><![CDATA[
 ProjectsTest.postWithMalformedXmlIsRejected
     POST /projects (malformed xml)                     expected 400, received 400
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="filterProjectsByQueryParameters" classname="api.ProjectsTest" time="0.254">
+  <testcase name="headCategoriesOfProject" classname="api.ProjectsTest" time="0.076">
     <system-out><![CDATA[
-ProjectsTest.filterProjectsByQueryParameters
-    POST /projects                                     expected 201, received 201
-    POST /projects                                     expected 201, received 201
-    GET /projects?active=true                          expected 200, received 200
+ProjectsTest.headCategoriesOfProject
+    HEAD categories                                    expected 200, received 200
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="deleteCategoryLinkThenAgainReturns404" classname="api.ProjectsTest" time="0.224">
+  <testcase name="linkWithMalformedJsonLinksNothing" classname="api.ProjectsTest" time="0.086">
+    <system-out><![CDATA[
+ProjectsTest.linkWithMalformedJsonLinksNothing
+    POST /projects/315/tasks (malformed json)          expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteCategoryLinkThenAgainReturns404" classname="api.ProjectsTest" time="0.098">
     <system-out><![CDATA[
 ProjectsTest.deleteCategoryLinkThenAgainReturns404
     DELETE link                                        expected 200, received 200
@@ -82,171 +123,24 @@ ProjectsTest.deleteCategoryLinkThenAgainReturns404
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="headTasksOfProject" classname="api.ProjectsTest" time="0.169">
+  <testcase name="linkUnknownTodoOrToUnknownProjectReturns404" classname="api.ProjectsTest" time="0.088">
     <system-out><![CDATA[
-ProjectsTest.headTasksOfProject
-    HEAD /projects/169/tasks                           expected 200, received 200
+ProjectsTest.linkUnknownTodoOrToUnknownProjectReturns404
+    POST /projects/317/tasks (unknown todo)            expected 404, received 404
+    POST /projects/999999/tasks (unknown project)      expected 404, received 404
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="putOnTaskLinkReturns405" classname="api.ProjectsTest" time="0.19">
+  <testcase name="filterProjectsByQueryParameters" classname="api.ProjectsTest" time="0.084">
     <system-out><![CDATA[
-ProjectsTest.putOnTaskLinkReturns405
-    POST /projects/170/tasks                           expected 201, received 201
-    PUT /projects/170/tasks/119                        expected 405, received 405
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="getAllProjects" classname="api.ProjectsTest" time="0.195">
-    <system-out><![CDATA[
-ProjectsTest.getAllProjects
-    GET /projects                                      expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="amendWithJsonBodyAndXmlResponse" classname="api.ProjectsTest" time="0.21">
-    <system-out><![CDATA[
-ProjectsTest.amendWithJsonBodyAndXmlResponse
-    POST /projects/172 (JSON in, XML out)              expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="patchOnProjectReturns405" classname="api.ProjectsTest" time="0.152">
-    <system-out><![CDATA[
-ProjectsTest.patchOnProjectReturns405
+ProjectsTest.filterProjectsByQueryParameters
     POST /projects                                     expected 201, received 201
-    PATCH /projects/173                                expected 405, received 405
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postLinksTodoInBothDirectionsOnlyOnce" classname="api.ProjectsTest" time="0.193">
-    <system-out><![CDATA[
-ProjectsTest.postLinksTodoInBothDirectionsOnlyOnce
-    POST /projects/174/tasks                           expected 201, received 201
-    POST /projects/174/tasks (again)                   expected 201, received 201
-    GET /projects/174/tasks (xml)                      expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="headCategoriesOfProject" classname="api.ProjectsTest" time="0.138">
-    <system-out><![CDATA[
-ProjectsTest.headCategoriesOfProject
-    HEAD categories                                    expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="getProjectByIdAsJsonAndXml" classname="api.ProjectsTest" time="0.2">
-    <system-out><![CDATA[
-ProjectsTest.getProjectByIdAsJsonAndXml
-    GET /projects/176                                  expected 200, received 200
-    GET AS XML /projects/176                           expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="deleteTaskLinkAgainReturns404" classname="api.ProjectsTest" time="0.292">
-    <system-out><![CDATA[
-ProjectsTest.deleteTaskLinkAgainReturns404
-    POST /projects/177/tasks                           expected 201, received 201
-    DELETE /projects/177/tasks/121                     expected 200, received 200
-    DELETE /projects/177/tasks/121 (again)             expected 404, received 404
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="getUnknownProjectReturns404" classname="api.ProjectsTest" time="0.216">
-    <system-out><![CDATA[
-ProjectsTest.getUnknownProjectReturns404
-    GET /projects/999999                               expected 404, received 404
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postWithMalformedJsonIsRejectedAndCreatesNothing" classname="api.ProjectsTest" time="0.14">
-    <system-out><![CDATA[
-ProjectsTest.postWithMalformedJsonIsRejectedAndCreatesNothing
-    POST /projects (malformed Json)                    expected 400, received 400
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="putPatchAndDeleteOnProjectsCollectionReturn405" classname="api.ProjectsTest" time="0.116">
-    <system-out><![CDATA[
-ProjectsTest.putPatchAndDeleteOnProjectsCollectionReturn405
-    PUT /projects method is refused                    expected 405, received 405
-    PATCH /projects method is refused                  expected 405, received 405
-    DELETE /projects                                   expected 405, received 405
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="linkWithMalformedJsonLinksNothing" classname="api.ProjectsTest" time="0.135">
-    <system-out><![CDATA[
-ProjectsTest.linkWithMalformedJsonLinksNothing
-    POST /projects/178/tasks (malformed json)          expected 400, received 400
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="putAndPostOnUnknownProjectReturn404" classname="api.ProjectsTest" time="0.102">
-    <system-out><![CDATA[
-ProjectsTest.putAndPostOnUnknownProjectReturn404
-    POST /projects/999999 on unknown project           expected 404, received 404
-    PUT /projects/999999 on unknown project            expected 404, received 404
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postCreatesProject" classname="api.ProjectsTest" time="0.128">
-    <system-out><![CDATA[
-ProjectsTest.postCreatesProject
     POST /projects                                     expected 201, received 201
-    GET /projects/179                                  expected 200, received 200
+    GET /projects?active=true                          expected 200, received 200
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="deleteProjectTwiceReturns404" classname="api.ProjectsTest" time="0.129">
-    <system-out><![CDATA[
-ProjectsTest.deleteProjectTwiceReturns404
-    DELETE /projects/180                               expected 200, received 200
-    DELETE /projects/180 (again)                       expected 404, received 404
-    GET /projects/180 (after delete)                   expected 404, received 404
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="linkCategoryWithMalformedJsonLinksNothing" classname="api.ProjectsTest" time="0.121">
-    <system-out><![CDATA[
-ProjectsTest.linkCategoryWithMalformedJsonLinksNothing
-    malformed link body                                expected 400, received 400
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postWithXmlBodyAndXmlResponse" classname="api.ProjectsTest" time="0.114">
-    <system-out><![CDATA[
-ProjectsTest.postWithXmlBodyAndXmlResponse
-    POST /projects (xml in, xml out)                   expected 201, received 201
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="headProjects" classname="api.ProjectsTest" time="0.18">
-    <system-out><![CDATA[
-ProjectsTest.headProjects
-    HEAD /projects                                     expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="headProjectById" classname="api.ProjectsTest" time="0.13">
-    <system-out><![CDATA[
-ProjectsTest.headProjectById
-    POST /projects project created                     expected 201, received 201
-    HEAD /projects/183                                 expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="deleteProjectKeepsItsTodosAndOtherProjects" classname="api.ProjectsTest" time="0.15">
-    <system-out><![CDATA[
-ProjectsTest.deleteProjectKeepsItsTodosAndOtherProjects
-    POST /projects/184/tasks                           expected 201, received 201
-    DELETE /projects/184                               expected 200, received 200
-    GET /todos/123 (todo survives)                     expected 200, received 200
-    GET /projects/185 (other project untouched)        expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postWithIdOrInvalidBooleanIsRejectedAndCreatesNothing" classname="api.ProjectsTest" time="0.142">
+  <testcase name="postWithIdOrInvalidBooleanIsRejectedAndCreatesNothing" classname="api.ProjectsTest" time="0.078">
     <system-out><![CDATA[
 ProjectsTest.postWithIdOrInvalidBooleanIsRejectedAndCreatesNothing
     POST /projects (client id)                         expected 400, received 400
@@ -254,72 +148,31 @@ ProjectsTest.postWithIdOrInvalidBooleanIsRejectedAndCreatesNothing
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="linkUnknownCategoryOrToUnknownProjectReturns404" classname="api.ProjectsTest" time="0.137">
+  <testcase name="putWithXmlBody" classname="api.ProjectsTest" time="0.098">
     <system-out><![CDATA[
-ProjectsTest.linkUnknownCategoryOrToUnknownProjectReturns404
-    link unknown category                              expected 404, received 404
-    link to unknown project                            expected 404, received 404
+ProjectsTest.putWithXmlBody
+    PUT XML /projects/321                              expected 200, received 200
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="linkUnknownTodoOrToUnknownProjectReturns404" classname="api.ProjectsTest" time="0.142">
-    <system-out><![CDATA[
-ProjectsTest.linkUnknownTodoOrToUnknownProjectReturns404
-    POST /projects/188/tasks (unknown todo)            expected 404, received 404
-    POST /projects/999999/tasks (unknown project)      expected 404, received 404
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="putPatchDeleteOnTasksReturn405" classname="api.ProjectsTest" time="0.13">
-    <system-out><![CDATA[
-ProjectsTest.putPatchDeleteOnTasksReturn405
-    PUT /projects/189/tasks                            expected 405, received 405
-    PATCH /projects/189/tasks                          expected 405, received 405
-    DELETE /projects/189/tasks                         expected 405, received 405
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="amendWithMalformedJsonOrInvalidBooleanLeavesProjectUnchanged" classname="api.ProjectsTest" time="0.143">
-    <system-out><![CDATA[
-ProjectsTest.amendWithMalformedJsonOrInvalidBooleanLeavesProjectUnchanged
-    POST /projects                                     expected 201, received 201
-    POST /projects/190 (malformed json)                expected 400, received 400
-    POST /projects/190 (completed not boolean)         expected 400, received 400
-    GET /projects/190                                  expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postAmendsOnlyTheGivenField" classname="api.ProjectsTest" time="0.137">
-    <system-out><![CDATA[
-ProjectsTest.postAmendsOnlyTheGivenField
-    POST /projects                                     expected 201, received 201
-    POST /projects/191 Project renamed                 expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="getAllProjectsAsXml" classname="api.ProjectsTest" time="0.138">
+  <testcase name="getAllProjectsAsXml" classname="api.ProjectsTest" time="0.22">
     <system-out><![CDATA[
 ProjectsTest.getAllProjectsAsXml
     GET /projects as XML                               expected 200, received 200
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="putWithXmlBody" classname="api.ProjectsTest" time="0.152">
+  <testcase name="deleteTaskLinkRemovesItOnBothSidesAndKeepsBoth" classname="api.ProjectsTest" time="0.279">
     <system-out><![CDATA[
-ProjectsTest.putWithXmlBody
-    PUT XML /projects/193                              expected 200, received 200
+ProjectsTest.deleteTaskLinkRemovesItOnBothSidesAndKeepsBoth
+    POST /projects/323/tasks                           expected 201, received 201
+    DELETE /projects/323/tasks/251                     expected 200, received 200
+    GET /projects/323 (still exists)                   expected 200, received 200
+    GET /todos/251 (still exists)                      expected 200, received 200
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="putAndPatchOnCategoriesReturn405" classname="api.ProjectsTest" time="0.128">
-    <system-out><![CDATA[
-ProjectsTest.putAndPatchOnCategoriesReturn405
-    PUT categories                                     expected 405, received 405
-    PATCH categories                                   expected 405, received 405
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postLinksCategoryOnlyOnce" classname="api.ProjectsTest" time="0.113">
+  <testcase name="postLinksCategoryOnlyOnce" classname="api.ProjectsTest" time="0.177">
     <system-out><![CDATA[
 ProjectsTest.postLinksCategoryOnlyOnce
     first link                                         expected 201, received 201
@@ -329,13 +182,158 @@ ProjectsTest.postLinksCategoryOnlyOnce
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="deleteTaskLinkRemovesItOnBothSidesAndKeepsBoth" classname="api.ProjectsTest" time="0.131">
+  <testcase name="headTasksOfProject" classname="api.ProjectsTest" time="0.093">
     <system-out><![CDATA[
-ProjectsTest.deleteTaskLinkRemovesItOnBothSidesAndKeepsBoth
-    POST /projects/196/tasks                           expected 201, received 201
-    DELETE /projects/196/tasks/125                     expected 200, received 200
-    GET /projects/196 (still exists)                   expected 200, received 200
-    GET /todos/125 (still exists)                      expected 200, received 200
+ProjectsTest.headTasksOfProject
+    HEAD /projects/325/tasks                           expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="headProjects" classname="api.ProjectsTest" time="0.059">
+    <system-out><![CDATA[
+ProjectsTest.headProjects
+    HEAD /projects                                     expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getUnknownProjectReturns404" classname="api.ProjectsTest" time="0.064">
+    <system-out><![CDATA[
+ProjectsTest.getUnknownProjectReturns404
+    GET /projects/999999                               expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteTaskLinkAgainReturns404" classname="api.ProjectsTest" time="0.073">
+    <system-out><![CDATA[
+ProjectsTest.deleteTaskLinkAgainReturns404
+    POST /projects/326/tasks                           expected 201, received 201
+    DELETE /projects/326/tasks/252                     expected 200, received 200
+    DELETE /projects/326/tasks/252 (again)             expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="amendWithJsonBodyAndXmlResponse" classname="api.ProjectsTest" time="0.073">
+    <system-out><![CDATA[
+ProjectsTest.amendWithJsonBodyAndXmlResponse
+    POST /projects/327 (JSON in, XML out)              expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="patchOnProjectReturns405" classname="api.ProjectsTest" time="0.069">
+    <system-out><![CDATA[
+ProjectsTest.patchOnProjectReturns405
+    POST /projects                                     expected 201, received 201
+    PATCH /projects/328                                expected 405, received 405
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="headProjectById" classname="api.ProjectsTest" time="0.066">
+    <system-out><![CDATA[
+ProjectsTest.headProjectById
+    POST /projects project created                     expected 201, received 201
+    HEAD /projects/329                                 expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putPatchDeleteOnTasksReturn405" classname="api.ProjectsTest" time="0.068">
+    <system-out><![CDATA[
+ProjectsTest.putPatchDeleteOnTasksReturn405
+    PUT /projects/330/tasks                            expected 405, received 405
+    PATCH /projects/330/tasks                          expected 405, received 405
+    DELETE /projects/330/tasks                         expected 405, received 405
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putPatchAndDeleteOnProjectsCollectionReturn405" classname="api.ProjectsTest" time="0.073">
+    <system-out><![CDATA[
+ProjectsTest.putPatchAndDeleteOnProjectsCollectionReturn405
+    PUT /projects method is refused                    expected 405, received 405
+    PATCH /projects method is refused                  expected 405, received 405
+    DELETE /projects                                   expected 405, received 405
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getProjectByIdAsJsonAndXml" classname="api.ProjectsTest" time="0.075">
+    <system-out><![CDATA[
+ProjectsTest.getProjectByIdAsJsonAndXml
+    GET /projects/331                                  expected 200, received 200
+    GET AS XML /projects/331                           expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postWithMalformedJsonIsRejectedAndCreatesNothing" classname="api.ProjectsTest" time="0.075">
+    <system-out><![CDATA[
+ProjectsTest.postWithMalformedJsonIsRejectedAndCreatesNothing
+    POST /projects (malformed Json)                    expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postAmendsOnlyTheGivenField" classname="api.ProjectsTest" time="0.071">
+    <system-out><![CDATA[
+ProjectsTest.postAmendsOnlyTheGivenField
+    POST /projects                                     expected 201, received 201
+    POST /projects/332 Project renamed                 expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteProjectKeepsItsTodosAndOtherProjects" classname="api.ProjectsTest" time="0.083">
+    <system-out><![CDATA[
+ProjectsTest.deleteProjectKeepsItsTodosAndOtherProjects
+    POST /projects/333/tasks                           expected 201, received 201
+    DELETE /projects/333                               expected 200, received 200
+    GET /todos/253 (todo survives)                     expected 200, received 200
+    GET /projects/334 (other project untouched)        expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postLinksTodoInBothDirectionsOnlyOnce" classname="api.ProjectsTest" time="0.128">
+    <system-out><![CDATA[
+ProjectsTest.postLinksTodoInBothDirectionsOnlyOnce
+    POST /projects/335/tasks                           expected 201, received 201
+    POST /projects/335/tasks (again)                   expected 201, received 201
+    GET /projects/335/tasks (xml)                      expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteProjectTwiceReturns404" classname="api.ProjectsTest" time="0.101">
+    <system-out><![CDATA[
+ProjectsTest.deleteProjectTwiceReturns404
+    DELETE /projects/336                               expected 200, received 200
+    DELETE /projects/336 (again)                       expected 404, received 404
+    GET /projects/336 (after delete)                   expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putAndPostOnUnknownProjectReturn404" classname="api.ProjectsTest" time="0.135">
+    <system-out><![CDATA[
+ProjectsTest.putAndPostOnUnknownProjectReturn404
+    POST /projects/999999 on unknown project           expected 404, received 404
+    PUT /projects/999999 on unknown project            expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postCreatesProject" classname="api.ProjectsTest" time="0.303">
+    <system-out><![CDATA[
+ProjectsTest.postCreatesProject
+    POST /projects                                     expected 201, received 201
+    GET /projects/337                                  expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="amendWithMalformedJsonOrInvalidBooleanLeavesProjectUnchanged" classname="api.ProjectsTest" time="0.086">
+    <system-out><![CDATA[
+ProjectsTest.amendWithMalformedJsonOrInvalidBooleanLeavesProjectUnchanged
+    POST /projects                                     expected 201, received 201
+    POST /projects/338 (malformed json)                expected 400, received 400
+    POST /projects/338 (completed not boolean)         expected 400, received 400
+    GET /projects/338                                  expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="linkCategoryWithMalformedJsonLinksNothing" classname="api.ProjectsTest" time="0.078">
+    <system-out><![CDATA[
+ProjectsTest.linkCategoryWithMalformedJsonLinksNothing
+    malformed link body                                expected 400, received 400
     result: PASS
 ]]></system-out>
   </testcase>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="api.TodosTest" time="6.973" tests="55" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="api.TodosTest" time="6.357" tests="55" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire/surefirebooter-20261012221244439_3.jar /home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire 2026-10-12T22-12-44_374-jvmRun1 surefire-20261012221244439_1tmp surefire_0-20261012221244439_2tmp"/>
+    <property name="sun.java.command" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire/surefirebooter-20261013193605583_3.jar /home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire 2026-10-13T19-36-05_523-jvmRun1 surefire-20261013193605583_1tmp surefire_0-20261013193605583_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/test-classes:/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/classes:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.0/junit-jupiter-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/home/shahzoabshafi/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.0/junit-jupiter-engine-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/platform/junit-platform-engine/1.11.0/junit-platform-engine-1.11.0.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/shahzoabshafi/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/shahzoabshafi/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/shahzoabshafi/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/shahzoabshafi/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire/surefirebooter-20261012221244439_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire/surefirebooter-20261013193605583_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.12.1+1-1-22.04.4-Ubuntu"/>
     <property name="user.name" value="shahzoabshafi"/>
@@ -54,313 +54,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="postProjectWithMalformedJsonLinksNothing" classname="api.TodosTest" time="0.185">
+  <testcase name="postProjectToUnknownTodoIsRejected" classname="api.TodosTest" time="0.115">
     <system-out><![CDATA[
-TodosTest.postProjectWithMalformedJsonLinksNothing
-    POST /todos/22/tasksof (malformed json)            expected 400, received 400
+TodosTest.postProjectToUnknownTodoIsRejected
+    POST /todos/999999/tasksof                         expected 4xx, received 404
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="postCategoryToUnknownTodoIsRejected" classname="api.TodosTest" time="0.176">
-    <system-out><![CDATA[
-TodosTest.postCategoryToUnknownTodoIsRejected
-    POST /todos/999999/categories                      expected 4xx, received 404
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="deleteRemovesOnlyThatTodo" classname="api.TodosTest" time="0.117">
-    <system-out><![CDATA[
-TodosTest.deleteRemovesOnlyThatTodo
-    DELETE /todos/23                                   expected 200, received 200
-    GET /todos/23                                      expected 404, received 404
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postWithMalformedXmlIsRejected" classname="api.TodosTest" time="0.132">
-    <system-out><![CDATA[
-TodosTest.postWithMalformedXmlIsRejected
-    POST /todos (malformed xml)                        expected 400, received 400
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postCreatesTodoAndAddsNothingElse" classname="api.TodosTest" time="0.119">
-    <system-out><![CDATA[
-TodosTest.postCreatesTodoAndAddsNothingElse
-    POST /todos                                        expected 201, received 201
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postWithMalformedJsonIsRejected" classname="api.TodosTest" time="0.1">
-    <system-out><![CDATA[
-TodosTest.postWithMalformedJsonIsRejected
-    POST /todos (malformed json)                       expected 400, received 400
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="filterByAllFields" classname="api.TodosTest" time="0.12">
-    <system-out><![CDATA[
-TodosTest.filterByAllFields
-    GET /todos?title&doneStatus&description            expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="headTasksOf" classname="api.TodosTest" time="0.104">
-    <system-out><![CDATA[
-TodosTest.headTasksOf
-    HEAD /todos/27/tasksof                             expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postCategoryWithMalformedJsonLinksNothing" classname="api.TodosTest" time="0.127">
-    <system-out><![CDATA[
-TodosTest.postCategoryWithMalformedJsonLinksNothing
-    POST /todos/28/categories (malformed json)         expected 400, received 400
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postLinksTodoToCategoryOnlyOnce" classname="api.TodosTest" time="0.149">
-    <system-out><![CDATA[
-TodosTest.postLinksTodoToCategoryOnlyOnce
-    POST /todos/29/categories                          expected 201, received 201
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="getTasksOfAsXml" classname="api.TodosTest" time="0.189">
-    <system-out><![CDATA[
-TodosTest.getTasksOfAsXml
-    GET /todos/31/tasksof (Accept xml)                 expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="headCategories" classname="api.TodosTest" time="0.129">
-    <system-out><![CDATA[
-TodosTest.headCategories
-    HEAD /todos/32/categories                          expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="deleteUnknownOrAlreadyDeletedTodoReturns404" classname="api.TodosTest" time="0.107">
-    <system-out><![CDATA[
-TodosTest.deleteUnknownOrAlreadyDeletedTodoReturns404
-    DELETE /todos/33 (again)                           expected 404, received 404
-    DELETE /todos/999999                               expected 404, received 404
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postWithUnknownProjectLinksNothing" classname="api.TodosTest" time="0.112">
-    <system-out><![CDATA[
-TodosTest.postWithUnknownProjectLinksNothing
-    POST /todos/34/tasksof (unknown project)           expected 4xx, received 404
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="getTasksOfTodoWithoutProjectIsEmpty" classname="api.TodosTest" time="0.11">
-    <system-out><![CDATA[
-TodosTest.getTasksOfTodoWithoutProjectIsEmpty
-    GET /todos/35/tasksof                              expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="putWithMalformedJsonLeavesTheTodoUnchanged" classname="api.TodosTest" time="0.282">
-    <system-out><![CDATA[
-TodosTest.putWithMalformedJsonLeavesTheTodoUnchanged
-    PUT /todos/36 (malformed json)                     expected 400, received 400
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="putOnCategoriesReturns405" classname="api.TodosTest" time="0.193">
-    <system-out><![CDATA[
-TodosTest.putOnCategoriesReturns405
-    PUT /todos/37/categories                           expected 405, received 405
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="putOnTasksOfReturns405" classname="api.TodosTest" time="0.113">
-    <system-out><![CDATA[
-TodosTest.putOnTasksOfReturns405
-    PUT /todos/38/tasksof                              expected 405, received 405
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="getAllTodos" classname="api.TodosTest" time="0.151">
-    <system-out><![CDATA[
-TodosTest.getAllTodos
-    GET /todos                                         expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="filterByTitle" classname="api.TodosTest" time="0.16">
-    <system-out><![CDATA[
-TodosTest.filterByTitle
-    GET /todos?title=filter-b5c37c5b                   expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="getAllTodosAsXml" classname="api.TodosTest" time="0.127">
-    <system-out><![CDATA[
-TodosTest.getAllTodosAsXml
-    GET /todos (Accept xml)                            expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="getCategoriesOfTodo" classname="api.TodosTest" time="0.113">
-    <system-out><![CDATA[
-TodosTest.getCategoriesOfTodo
-    GET /todos/42/categories                           expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="headTodos" classname="api.TodosTest" time="0.098">
-    <system-out><![CDATA[
-TodosTest.headTodos
-    HEAD /todos                                        expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postWithUnknownCategoryOrNoIdLinksNothing" classname="api.TodosTest" time="0.131">
-    <system-out><![CDATA[
-TodosTest.postWithUnknownCategoryOrNoIdLinksNothing
-    POST /todos/43/categories (unknown category)       expected 4xx, received 404
-    POST /todos/43/categories (no id)                  expected 400, received 400
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postTwiceCreatesTwoTodos" classname="api.TodosTest" time="0.133">
-    <system-out><![CDATA[
-TodosTest.postTwiceCreatesTwoTodos
-    POST /todos (first)                                expected 201, received 201
-    POST /todos (second)                               expected 201, received 201
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="putAndDeleteOnTodosReturn405" classname="api.TodosTest" time="0.102">
-    <system-out><![CDATA[
-TodosTest.putAndDeleteOnTodosReturn405
-    PUT /todos                                         expected 405, received 405
-    DELETE /todos                                      expected 405, received 405
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postWithXmlBody" classname="api.TodosTest" time="0.097">
-    <system-out><![CDATA[
-TodosTest.postWithXmlBody
-    POST /todos (xml)                                  expected 201, received 201
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="filterWithEmptyOrUnmatchedTitleReturnsNoTodos" classname="api.TodosTest" time="0.095">
-    <system-out><![CDATA[
-TodosTest.filterWithEmptyOrUnmatchedTitleReturnsNoTodos
-    GET /todos?title=                                  expected 200, received 200
-    GET /todos?title=<no match>                        expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="deleteTodoRemovesItFromItsProject" classname="api.TodosTest" time="0.103">
-    <system-out><![CDATA[
-TodosTest.deleteTodoRemovesItFromItsProject
-    DELETE /todos/47                                   expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="headTodoById" classname="api.TodosTest" time="0.113">
-    <system-out><![CDATA[
-TodosTest.headTodoById
-    HEAD /todos/48                                     expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="putAndPatchOnTasksOfByIdReturn405" classname="api.TodosTest" time="0.106">
-    <system-out><![CDATA[
-TodosTest.putAndPatchOnTasksOfByIdReturn405
-    PUT /todos/49/tasksof/18                           expected 405, received 405
-    PATCH /todos/49/tasksof/18                         expected 405, received 405
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="deleteLinkKeepsTodoCategoryAndOtherLinks" classname="api.TodosTest" time="0.114">
-    <system-out><![CDATA[
-TodosTest.deleteLinkKeepsTodoCategoryAndOtherLinks
-    DELETE /todos/50/categories/11                     expected 200, received 200
-    GET /todos/50                                      expected 200, received 200
-    GET /categories/11                                 expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postLinksTodoToProjectInBothDirectionsOnlyOnce" classname="api.TodosTest" time="0.112">
-    <system-out><![CDATA[
-TodosTest.postLinksTodoToProjectInBothDirectionsOnlyOnce
-    POST /todos/51/tasksof                             expected 201, received 201
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="putWithMalformedXmlLeavesTheTodoUnchanged" classname="api.TodosTest" time="0.154">
-    <system-out><![CDATA[
-TodosTest.putWithMalformedXmlLeavesTheTodoUnchanged
-    PUT /todos/53 (malformed xml)                      expected 400, received 400
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="putAndPostOnUnknownTodoReturn404" classname="api.TodosTest" time="0.301">
-    <system-out><![CDATA[
-TodosTest.putAndPostOnUnknownTodoReturn404
-    PUT /todos/999999                                  expected 404, received 404
-    POST /todos/999999                                 expected 404, received 404
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postWithXmlBodyAndXmlResponse" classname="api.TodosTest" time="0.188">
-    <system-out><![CDATA[
-TodosTest.postWithXmlBodyAndXmlResponse
-    POST /todos (xml in, xml out)                      expected 201, received 201
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="postAmendWithXmlBodyAndXmlResponse" classname="api.TodosTest" time="0.097">
-    <system-out><![CDATA[
-TodosTest.postAmendWithXmlBodyAndXmlResponse
-    POST /todos/55 (xml in, xml out)                   expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="deleteWithInjectionInTodoIdReturns400" classname="api.TodosTest" time="0.134">
-    <system-out><![CDATA[
-TodosTest.deleteWithInjectionInTodoIdReturns400
-    DELETE /todos/1%3Bls/tasksof/20                    expected 400, received 400
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="getCategoriesOfTodoWithoutAnyIsEmpty" classname="api.TodosTest" time="0.089">
-    <system-out><![CDATA[
-TodosTest.getCategoriesOfTodoWithoutAnyIsEmpty
-    GET /todos/57/categories                           expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="getTodoById" classname="api.TodosTest" time="0.103">
-    <system-out><![CDATA[
-TodosTest.getTodoById
-    GET /todos/58                                      expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="deleteLinkKeepsTodoProjectAndOtherLinks" classname="api.TodosTest" time="0.113">
-    <system-out><![CDATA[
-TodosTest.deleteLinkKeepsTodoProjectAndOtherLinks
-    DELETE /todos/59/tasksof/21                        expected 200, received 200
-    GET /todos/59                                      expected 200, received 200
-    GET /projects/21                                   expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="getTasksOfTodo" classname="api.TodosTest" time="0.108">
-    <system-out><![CDATA[
-TodosTest.getTasksOfTodo
-    GET /todos/60/tasksof                              expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="filterByDoneStatus" classname="api.TodosTest" time="0.131">
+  <testcase name="filterByDoneStatus" classname="api.TodosTest" time="0.137">
     <system-out><![CDATA[
 TodosTest.filterByDoneStatus
     GET /todos?doneStatus=true                         expected 200, received 200
@@ -368,44 +69,292 @@ TodosTest.filterByDoneStatus
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="postProjectToUnknownTodoIsRejected" classname="api.TodosTest" time="0.09">
+  <testcase name="putWithMalformedJsonLeavesTheTodoUnchanged" classname="api.TodosTest" time="0.118">
     <system-out><![CDATA[
-TodosTest.postProjectToUnknownTodoIsRejected
-    POST /todos/999999/tasksof                         expected 4xx, received 404
+TodosTest.putWithMalformedJsonLeavesTheTodoUnchanged
+    PUT /todos/194 (malformed json)                    expected 400, received 400
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="deleteLinkAgainOrForUnrelatedProjectReturns404" classname="api.TodosTest" time="0.104">
+  <testcase name="postWithUnknownCategoryOrNoIdLinksNothing" classname="api.TodosTest" time="0.112">
     <system-out><![CDATA[
-TodosTest.deleteLinkAgainOrForUnrelatedProjectReturns404
-    DELETE /todos/63/tasksof/25 (again)                expected 404, received 404
-    DELETE /todos/63/tasksof/26                        expected 404, received 404
+TodosTest.postWithUnknownCategoryOrNoIdLinksNothing
+    POST /todos/195/categories (unknown category)      expected 4xx, received 404
+    POST /todos/195/categories (no id)                 expected 400, received 400
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="putAndPostWithEmptyTitleLeaveTheTodoUnchanged" classname="api.TodosTest" time="0.102">
+  <testcase name="headTodoById" classname="api.TodosTest" time="0.106">
+    <system-out><![CDATA[
+TodosTest.headTodoById
+    HEAD /todos/196                                    expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postWithXmlBodyAndXmlResponse" classname="api.TodosTest" time="0.141">
+    <system-out><![CDATA[
+TodosTest.postWithXmlBodyAndXmlResponse
+    POST /todos (xml in, xml out)                      expected 201, received 201
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getTasksOfTodo" classname="api.TodosTest" time="0.114">
+    <system-out><![CDATA[
+TodosTest.getTasksOfTodo
+    GET /todos/198/tasksof                             expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getCategoriesOfTodoWithoutAnyIsEmpty" classname="api.TodosTest" time="0.102">
+    <system-out><![CDATA[
+TodosTest.getCategoriesOfTodoWithoutAnyIsEmpty
+    GET /todos/199/categories                          expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getCategoriesOfTodo" classname="api.TodosTest" time="0.129">
+    <system-out><![CDATA[
+TodosTest.getCategoriesOfTodo
+    GET /todos/200/categories                          expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putWithMalformedXmlLeavesTheTodoUnchanged" classname="api.TodosTest" time="0.258">
+    <system-out><![CDATA[
+TodosTest.putWithMalformedXmlLeavesTheTodoUnchanged
+    PUT /todos/201 (malformed xml)                     expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postAmendWithXmlBodyAndXmlResponse" classname="api.TodosTest" time="0.323">
+    <system-out><![CDATA[
+TodosTest.postAmendWithXmlBodyAndXmlResponse
+    POST /todos/202 (xml in, xml out)                  expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="filterByTitle" classname="api.TodosTest" time="0.125">
+    <system-out><![CDATA[
+TodosTest.filterByTitle
+    GET /todos?title=filter-9f2ea7fd                   expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putAndPostWithEmptyTitleLeaveTheTodoUnchanged" classname="api.TodosTest" time="0.116">
     <system-out><![CDATA[
 TodosTest.putAndPostWithEmptyTitleLeaveTheTodoUnchanged
-    PUT /todos/64 (empty title)                        expected 400, received 400
-    POST /todos/64 (empty title)                       expected 400, received 400
+    PUT /todos/205 (empty title)                       expected 400, received 400
+    POST /todos/205 (empty title)                      expected 400, received 400
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="putAmendsTheTodo" classname="api.TodosTest" time="0.115">
+  <testcase name="postCreatesTodoAndAddsNothingElse" classname="api.TodosTest" time="0.105">
     <system-out><![CDATA[
-TodosTest.putAmendsTheTodo
-    PUT /todos/65                                      expected 200, received 200
+TodosTest.postCreatesTodoAndAddsNothingElse
+    POST /todos                                        expected 201, received 201
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="getTodoByIdAsXml" classname="api.TodosTest" time="0.083">
+  <testcase name="headTasksOf" classname="api.TodosTest" time="0.099">
+    <system-out><![CDATA[
+TodosTest.headTasksOf
+    HEAD /todos/207/tasksof                            expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putAndPatchOnTasksOfByIdReturn405" classname="api.TodosTest" time="0.154">
+    <system-out><![CDATA[
+TodosTest.putAndPatchOnTasksOfByIdReturn405
+    PUT /todos/208/tasksof/297                         expected 405, received 405
+    PATCH /todos/208/tasksof/297                       expected 405, received 405
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteLinkAgainOrForUnrelatedCategoryReturns404" classname="api.TodosTest" time="0.154">
+    <system-out><![CDATA[
+TodosTest.deleteLinkAgainOrForUnrelatedCategoryReturns404
+    DELETE /todos/209/categories/49 (again)            expected 404, received 404
+    DELETE /todos/209/categories/50                    expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postLinksTodoToProjectInBothDirectionsOnlyOnce" classname="api.TodosTest" time="0.279">
+    <system-out><![CDATA[
+TodosTest.postLinksTodoToProjectInBothDirectionsOnlyOnce
+    POST /todos/210/tasksof                            expected 201, received 201
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postWithMalformedXmlIsRejected" classname="api.TodosTest" time="0.25">
+    <system-out><![CDATA[
+TodosTest.postWithMalformedXmlIsRejected
+    POST /todos (malformed xml)                        expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putOnCategoriesReturns405" classname="api.TodosTest" time="0.084">
+    <system-out><![CDATA[
+TodosTest.putOnCategoriesReturns405
+    PUT /todos/212/categories                          expected 405, received 405
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteWithInjectionInTodoIdReturns400" classname="api.TodosTest" time="0.101">
+    <system-out><![CDATA[
+TodosTest.deleteWithInjectionInTodoIdReturns400
+    DELETE /todos/1%3Bls/tasksof/299                   expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putAndPostOnUnknownTodoReturn404" classname="api.TodosTest" time="0.083">
+    <system-out><![CDATA[
+TodosTest.putAndPostOnUnknownTodoReturn404
+    PUT /todos/999999                                  expected 404, received 404
+    POST /todos/999999                                 expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteRemovesOnlyThatTodo" classname="api.TodosTest" time="0.089">
+    <system-out><![CDATA[
+TodosTest.deleteRemovesOnlyThatTodo
+    DELETE /todos/214                                  expected 200, received 200
+    GET /todos/214                                     expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postProjectWithMalformedJsonLinksNothing" classname="api.TodosTest" time="0.102">
+    <system-out><![CDATA[
+TodosTest.postProjectWithMalformedJsonLinksNothing
+    POST /todos/215/tasksof (malformed json)           expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getTasksOfAsXml" classname="api.TodosTest" time="0.094">
+    <system-out><![CDATA[
+TodosTest.getTasksOfAsXml
+    GET /todos/216/tasksof (Accept xml)                expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteTodoRemovesItFromItsProject" classname="api.TodosTest" time="0.091">
+    <system-out><![CDATA[
+TodosTest.deleteTodoRemovesItFromItsProject
+    DELETE /todos/217                                  expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="filterByAllFields" classname="api.TodosTest" time="0.098">
+    <system-out><![CDATA[
+TodosTest.filterByAllFields
+    GET /todos?title&doneStatus&description            expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postWithMalformedJsonIsRejected" classname="api.TodosTest" time="0.095">
+    <system-out><![CDATA[
+TodosTest.postWithMalformedJsonIsRejected
+    POST /todos (malformed json)                       expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getTodoByIdAsXml" classname="api.TodosTest" time="0.09">
     <system-out><![CDATA[
 TodosTest.getTodoByIdAsXml
-    GET /todos/66 (Accept xml)                         expected 200, received 200
+    GET /todos/220 (Accept xml)                        expected 200, received 200
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="getAndHeadUnknownTodoReturn404" classname="api.TodosTest" time="0.08">
+  <testcase name="putWithXmlBody" classname="api.TodosTest" time="0.086">
+    <system-out><![CDATA[
+TodosTest.putWithXmlBody
+    PUT /todos/221 (xml)                               expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getTasksOfTodoWithoutProjectIsEmpty" classname="api.TodosTest" time="0.08">
+    <system-out><![CDATA[
+TodosTest.getTasksOfTodoWithoutProjectIsEmpty
+    GET /todos/222/tasksof                             expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="filterWithEmptyOrUnmatchedTitleReturnsNoTodos" classname="api.TodosTest" time="0.086">
+    <system-out><![CDATA[
+TodosTest.filterWithEmptyOrUnmatchedTitleReturnsNoTodos
+    GET /todos?title=                                  expected 200, received 200
+    GET /todos?title=<no match>                        expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getCategoriesAsXml" classname="api.TodosTest" time="0.139">
+    <system-out><![CDATA[
+TodosTest.getCategoriesAsXml
+    GET /todos/223/categories (Accept xml)             expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postWithXmlBody" classname="api.TodosTest" time="0.1">
+    <system-out><![CDATA[
+TodosTest.postWithXmlBody
+    POST /todos (xml)                                  expected 201, received 201
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteLinkKeepsTodoCategoryAndOtherLinks" classname="api.TodosTest" time="0.108">
+    <system-out><![CDATA[
+TodosTest.deleteLinkKeepsTodoCategoryAndOtherLinks
+    DELETE /todos/225/categories/52                    expected 200, received 200
+    GET /todos/225                                     expected 200, received 200
+    GET /categories/52                                 expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putAndDeleteOnTodosReturn405" classname="api.TodosTest" time="0.087">
+    <system-out><![CDATA[
+TodosTest.putAndDeleteOnTodosReturn405
+    PUT /todos                                         expected 405, received 405
+    DELETE /todos                                      expected 405, received 405
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postTwiceCreatesTwoTodos" classname="api.TodosTest" time="0.085">
+    <system-out><![CDATA[
+TodosTest.postTwiceCreatesTwoTodos
+    POST /todos (first)                                expected 201, received 201
+    POST /todos (second)                               expected 201, received 201
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postCategoryToUnknownTodoIsRejected" classname="api.TodosTest" time="0.09">
+    <system-out><![CDATA[
+TodosTest.postCategoryToUnknownTodoIsRejected
+    POST /todos/999999/categories                      expected 4xx, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getTodoById" classname="api.TodosTest" time="0.088">
+    <system-out><![CDATA[
+TodosTest.getTodoById
+    GET /todos/228                                     expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="headCategories" classname="api.TodosTest" time="0.075">
+    <system-out><![CDATA[
+TodosTest.headCategories
+    HEAD /todos/229/categories                         expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteLinkAgainOrForUnrelatedProjectReturns404" classname="api.TodosTest" time="0.093">
+    <system-out><![CDATA[
+TodosTest.deleteLinkAgainOrForUnrelatedProjectReturns404
+    DELETE /todos/230/tasksof/302 (again)              expected 404, received 404
+    DELETE /todos/230/tasksof/303                      expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getAndHeadUnknownTodoReturn404" classname="api.TodosTest" time="0.083">
     <system-out><![CDATA[
 TodosTest.getAndHeadUnknownTodoReturn404
     GET /todos/-1                                      expected 404, received 404
@@ -413,43 +362,94 @@ TodosTest.getAndHeadUnknownTodoReturn404
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="postAmendsOnlyTheGivenField" classname="api.TodosTest" time="0.123">
-    <system-out><![CDATA[
-TodosTest.postAmendsOnlyTheGivenField
-    POST /todos/67                                     expected 200, received 200
-    result: PASS
-]]></system-out>
-  </testcase>
-  <testcase name="putWithJsonBodyAndXmlResponse" classname="api.TodosTest" time="0.1">
+  <testcase name="putWithJsonBodyAndXmlResponse" classname="api.TodosTest" time="0.099">
     <system-out><![CDATA[
 TodosTest.putWithJsonBodyAndXmlResponse
-    PUT /todos/68 (json in, xml out)                   expected 200, received 200
+    PUT /todos/231 (json in, xml out)                  expected 200, received 200
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="putWithXmlBody" classname="api.TodosTest" time="0.105">
+  <testcase name="putAmendsTheTodo" classname="api.TodosTest" time="0.106">
     <system-out><![CDATA[
-TodosTest.putWithXmlBody
-    PUT /todos/69 (xml)                                expected 200, received 200
+TodosTest.putAmendsTheTodo
+    PUT /todos/232                                     expected 200, received 200
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="deleteLinkAgainOrForUnrelatedCategoryReturns404" classname="api.TodosTest" time="0.113">
+  <testcase name="postLinksTodoToCategoryOnlyOnce" classname="api.TodosTest" time="0.093">
     <system-out><![CDATA[
-TodosTest.deleteLinkAgainOrForUnrelatedCategoryReturns404
-    DELETE /todos/70/categories/13 (again)             expected 404, received 404
-    DELETE /todos/70/categories/14                     expected 404, received 404
+TodosTest.postLinksTodoToCategoryOnlyOnce
+    POST /todos/233/categories                         expected 201, received 201
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="getCategoriesAsXml" classname="api.TodosTest" time="0.097">
+  <testcase name="headTodos" classname="api.TodosTest" time="0.069">
     <system-out><![CDATA[
-TodosTest.getCategoriesAsXml
-    GET /todos/71/categories (Accept xml)              expected 200, received 200
+TodosTest.headTodos
+    HEAD /todos                                        expected 200, received 200
     result: PASS
 ]]></system-out>
   </testcase>
-  <testcase name="postWithInvalidBodyIsRejectedAndCreatesNothing" classname="api.TodosTest" time="0.108">
+  <testcase name="postAmendsOnlyTheGivenField" classname="api.TodosTest" time="0.087">
+    <system-out><![CDATA[
+TodosTest.postAmendsOnlyTheGivenField
+    POST /todos/235                                    expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getAllTodosAsXml" classname="api.TodosTest" time="0.081">
+    <system-out><![CDATA[
+TodosTest.getAllTodosAsXml
+    GET /todos (Accept xml)                            expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="putOnTasksOfReturns405" classname="api.TodosTest" time="0.07">
+    <system-out><![CDATA[
+TodosTest.putOnTasksOfReturns405
+    PUT /todos/237/tasksof                             expected 405, received 405
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postCategoryWithMalformedJsonLinksNothing" classname="api.TodosTest" time="0.099">
+    <system-out><![CDATA[
+TodosTest.postCategoryWithMalformedJsonLinksNothing
+    POST /todos/238/categories (malformed json)        expected 400, received 400
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="getAllTodos" classname="api.TodosTest" time="0.077">
+    <system-out><![CDATA[
+TodosTest.getAllTodos
+    GET /todos                                         expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postWithUnknownProjectLinksNothing" classname="api.TodosTest" time="0.092">
+    <system-out><![CDATA[
+TodosTest.postWithUnknownProjectLinksNothing
+    POST /todos/239/tasksof (unknown project)          expected 4xx, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteUnknownOrAlreadyDeletedTodoReturns404" classname="api.TodosTest" time="0.12">
+    <system-out><![CDATA[
+TodosTest.deleteUnknownOrAlreadyDeletedTodoReturns404
+    DELETE /todos/240 (again)                          expected 404, received 404
+    DELETE /todos/999999                               expected 404, received 404
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="deleteLinkKeepsTodoProjectAndOtherLinks" classname="api.TodosTest" time="0.156">
+    <system-out><![CDATA[
+TodosTest.deleteLinkKeepsTodoProjectAndOtherLinks
+    DELETE /todos/241/tasksof/304                      expected 200, received 200
+    GET /todos/241                                     expected 200, received 200
+    GET /projects/304                                  expected 200, received 200
+    result: PASS
+]]></system-out>
+  </testcase>
+  <testcase name="postWithInvalidBodyIsRejectedAndCreatesNothing" classname="api.TodosTest" time="0.13">
     <system-out><![CDATA[
 TodosTest.postWithInvalidBodyIsRejectedAndCreatesNothing
     POST /todos {"doneStatus":false,"description":"no title"} expected 400, received 400

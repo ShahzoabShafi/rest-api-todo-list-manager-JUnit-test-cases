@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad915b1a-6d5d-4485-84a2-012be536dc39" name="Changes" comment="category links, undocumentedOPTIONS/linked-todo/query param, curl">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/KnownBugsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/KnownBugsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-api.KnownBugsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-api.KnownBugsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/api.KnownBugsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/api.KnownBugsTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/api/KnownBugsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/api/KnownBugsTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="ad915b1a-6d5d-4485-84a2-012be536dc39" name="Changes" comment="Bug pairs 12-19 (projects)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,6 +98,7 @@
     <MESSAGE value="Project tests" />
     <MESSAGE value="Project tests 21 test cases pass for ProjectsTest.java" />
     <MESSAGE value="category links, undocumentedOPTIONS/linked-todo/query param, curl" />
-    <option name="LAST_COMMIT_MESSAGE" value="category links, undocumentedOPTIONS/linked-todo/query param, curl" />
+    <MESSAGE value="Bug pairs 12-19 (projects)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug pairs 12-19 (projects)" />
   </component>
 </project>
