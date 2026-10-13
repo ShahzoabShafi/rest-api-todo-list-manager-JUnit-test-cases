@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad915b1a-6d5d-4485-84a2-012be536dc39" name="Changes" comment="Bug pairs 12-19 (projects)" />
+    <list default="true" id="ad915b1a-6d5d-4485-84a2-012be536dc39" name="Changes" comment="junit-platform.properties setup" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +55,10 @@
     "git.auto.fetch.suggestion.counter": "1",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -99,6 +102,7 @@
     <MESSAGE value="Project tests 21 test cases pass for ProjectsTest.java" />
     <MESSAGE value="category links, undocumentedOPTIONS/linked-todo/query param, curl" />
     <MESSAGE value="Bug pairs 12-19 (projects)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug pairs 12-19 (projects)" />
+    <MESSAGE value="junit-platform.properties setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="junit-platform.properties setup" />
   </component>
 </project>
