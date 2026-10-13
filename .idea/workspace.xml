@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad915b1a-6d5d-4485-84a2-012be536dc39" name="Changes" comment="Project tests 7-10">
+    <list default="true" id="ad915b1a-6d5d-4485-84a2-012be536dc39" name="Changes" comment="Project tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api/ProjectsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/ProjectsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-api.ProjectsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-api.ProjectsTest.xml" afterDir="false" />
@@ -101,6 +101,7 @@
     <MESSAGE value="ProjectsTest: first 6 tests" />
     <MESSAGE value="workspace xml" />
     <MESSAGE value="Project tests 7-10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project tests 7-10" />
+    <MESSAGE value="Project tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project tests" />
   </component>
 </project>
