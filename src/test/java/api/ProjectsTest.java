@@ -279,4 +279,185 @@ class ProjectsTest extends BaseApiTest {
                 "the todo should no longer point to the deleted project");
     }
 
+    @Test
+    void postLinksTodoInBothDirectionsOnlyOnce() {
+        String projectId = api.createProject(uniqueTitle("tasks-link"));
+        String todoId = api.createTodo(uniqueTitle("linked-todo"));
+
+        expectStatus(201, "POST /projects/" + projectId + "/tasks", linkTodo(projectId, todoId));
+        expectStatus(201, "POST /projects/" + projectId + "/tasks (again)", linkTodo(projectId, todoId));
+
+        assertEquals(List.of(todoId), api.todoIdsOfProject(projectId), "the todo should be linked exactly once");
+        assertTrue(api.projectIdsOfTodo(todoId).contains(projectId), "the link should be visible from the todo side");
+
+        Response xml = api.getAs("/projects/" + projectId + "/tasks", ContentType.XML);
+        expectStatus(200, "GET /projects/" + projectId + "/tasks (xml)", xml);
+        assertTrue(xml.xmlPath().getList("todos.todo.id").contains(todoId));
+    }
+
+    @Test
+    void headTasksOfProject() {
+        String projectId = api.createProject(uniqueTitle("tasks-head"));
+        Response response = api.head("/projects/" + projectId + "/tasks");
+        expectStatus(200, "HEAD /projects/" + projectId + "/tasks", response);
+        assertTrue(response.asString().isEmpty());
+    }
+
+    @Test
+    void linkUnknownTodoOrToUnknownProjectReturns404() {
+        String projectId = api.createProject(uniqueTitle("tasks-unknown"));
+        String todoId = api.createTodo(uniqueTitle("orphan-todo"));
+
+        expectStatus(404, "POST /projects/" + projectId + "/tasks (unknown todo)", linkTodo(projectId, "999999"));
+        expectStatus(404, "POST /projects/999999/tasks (unknown project)", linkTodo("999999", todoId));
+
+        assertTrue(api.todoIdsOfProject(projectId).isEmpty(), "nothing should have been linked");
+    }
+
+    @Test
+    void linkWithMalformedJsonLinksNothing() {
+        String projectId = api.createProject(uniqueTitle("tasks-malformed"));
+        String todoId = api.createTodo(uniqueTitle("todo"));
+
+        Response response = api.postJson("/projects/" + projectId + "/tasks", "{\"id\":\"" + todoId + "\"");
+        expectStatus(400, "POST /projects/" + projectId + "/tasks (malformed json)", response);
+        assertTrue(api.todoIdsOfProject(projectId).isEmpty());
+    }
+
+    @Test
+    void putPatchDeleteOnTasksReturn405() {
+        String path = "/projects/" + api.createProject(uniqueTitle("tasks-405")) + "/tasks";
+        expectStatus(405, "PUT " + path, api.put(path));
+        expectStatus(405, "PATCH " + path, api.patch(path));
+        expectStatus(405, "DELETE " + path, api.delete(path));
+    }
+
+    @Test
+    void deleteTaskLinkRemovesItOnBothSidesAndKeepsBoth() {
+        String projectId = api.createProject(uniqueTitle("unlink"));
+        String todoId = api.createTodo(uniqueTitle("unlinked-todo"));
+        expectStatus(201, "POST /projects/" + projectId + "/tasks", linkTodo(projectId, todoId));
+
+        Response unlink = api.delete("/projects/" + projectId + "/tasks/" + todoId);
+        expectStatus(200, "DELETE /projects/" + projectId + "/tasks/" + todoId, unlink);
+
+        assertTrue(api.todoIdsOfProject(projectId).isEmpty(), "project side should be empty");
+        assertTrue(api.projectIdsOfTodo(todoId).isEmpty(), "todo side should be empty");
+        expectStatus(200, "GET /projects/" + projectId + " (still exists)", api.get("/projects/" + projectId));
+        expectStatus(200, "GET /todos/" + todoId + " (still exists)", api.get("/todos/" + todoId));
+    }
+
+    @Test
+    void deleteTaskLinkAgainReturns404() {
+        String projectId = api.createProject(uniqueTitle("unlink-twice"));
+        String todoId = api.createTodo(uniqueTitle("todo"));
+        expectStatus(201, "POST /projects/" + projectId + "/tasks", linkTodo(projectId, todoId));
+
+        String linkPath = "/projects/" + projectId + "/tasks/" + todoId;
+        expectStatus(200, "DELETE " + linkPath, api.delete(linkPath));
+        expectStatus(404, "DELETE " + linkPath + " (again)", api.delete(linkPath));
+    }
+
+    @Test
+    void putOnTaskLinkReturns405() {
+        String projectId = api.createProject(uniqueTitle("link-405"));
+        String todoId = api.createTodo(uniqueTitle("todo"));
+        expectStatus(201, "POST /projects/" + projectId + "/tasks", linkTodo(projectId, todoId));
+
+        String linkPath = "/projects/" + projectId + "/tasks/" + todoId;
+        expectStatus(405, "PUT " + linkPath, api.put(linkPath));
+    }
+
+    // ===== D. Project <-> category relationships =====
+
+    @Test
+    void postLinksCategoryOnlyOnce() {
+        String projectId = api.createProject(uniqueTitle("cat-link"));
+        String categoryId = api.createCategory(uniqueTitle("cat"));
+
+        expectStatus(201, "first link", linkCategory(projectId, categoryId));
+        expectStatus(201, "same link again", linkCategory(projectId, categoryId));
+
+        Response json = api.get("/projects/" + projectId + "/categories");
+        expectStatus(200, "GET categories (JSON)", json);
+        assertEquals(List.of(categoryId), json.jsonPath().getList("categories.id"));
+
+        Response xml = api.getAs("/projects/" + projectId + "/categories", ContentType.XML);
+        expectStatus(200, "GET categories (XML)", xml);
+        assertEquals(categoryId, xml.xmlPath().getString("categories.category.id"));
+    }
+
+    @Test
+    void headCategoriesOfProject() {
+        String projectId = api.createProject(uniqueTitle("cat-head"));
+
+        Response response = api.head("/projects/" + projectId + "/categories");
+
+        expectStatus(200, "HEAD categories", response);
+        assertEquals("", response.asString());
+    }
+
+    @Test
+    void linkUnknownCategoryOrToUnknownProjectReturns404() {
+        String projectId = api.createProject(uniqueTitle("cat-404"));
+        String categoryId = api.createCategory(uniqueTitle("cat"));
+
+        expectStatus(404, "link unknown category", linkCategory(projectId, "999999"));
+        expectStatus(404, "link to unknown project", linkCategory("999999", categoryId));
+
+        assertTrue(api.get("/projects/" + projectId + "/categories")
+                .jsonPath().getList("categories").isEmpty());
+    }
+
+    @Test
+    void linkCategoryWithMalformedJsonLinksNothing() {
+        String projectId = api.createProject(uniqueTitle("cat-bad-json"));
+
+        Response response = api.postJson("/projects/" + projectId + "/categories", "{\"id\":");
+
+        expectStatus(400, "malformed link body", response);
+        assertFalse(response.jsonPath().getList("errorMessages").isEmpty());
+        assertTrue(api.get("/projects/" + projectId + "/categories")
+                .jsonPath().getList("categories").isEmpty());
+    }
+
+    @Test
+    void putAndPatchOnCategoriesReturn405() {
+        String projectId = api.createProject(uniqueTitle("cat-405"));
+        String categoryId = api.createCategory(uniqueTitle("cat"));
+        linkCategory(projectId, categoryId);
+
+        expectStatus(405, "PUT categories", api.put("/projects/" + projectId + "/categories"));
+        expectStatus(405, "PATCH categories", api.patch("/projects/" + projectId + "/categories"));
+
+        assertEquals(List.of(categoryId), api.get("/projects/" + projectId + "/categories")
+                .jsonPath().getList("categories.id"));
+    }
+
+    @Test
+    void deleteCategoryLinkThenAgainReturns404() {
+        String projectId = api.createProject(uniqueTitle("cat-del"));
+        String categoryId = api.createCategory(uniqueTitle("cat"));
+        linkCategory(projectId, categoryId);
+        String path = "/projects/" + projectId + "/categories/" + categoryId;
+
+        expectStatus(200, "DELETE link", api.delete(path));
+        expectStatus(404, "DELETE link again", api.delete(path));
+
+        assertTrue(api.get("/projects/" + projectId + "/categories")
+                .jsonPath().getList("categories").isEmpty());
+        // only the link is gone: both objects still exist
+        expectStatus(200, "category still exists", api.get("/categories/" + categoryId));
+        expectStatus(200, "project still exists", api.get("/projects/" + projectId));
+    }
+
+    //Helper
+    private Response linkTodo(String projectId, String todoId) {
+        return api.postJson("/projects/" + projectId + "/tasks", "{\"id\":\"" + todoId + "\"}");
+    }
+
+    private Response linkCategory(String projectId, String categoryId) {
+        return api.postJson("/projects/" + projectId + "/categories", "{\"id\":\"" + categoryId + "\"}");
+    }
+
 }

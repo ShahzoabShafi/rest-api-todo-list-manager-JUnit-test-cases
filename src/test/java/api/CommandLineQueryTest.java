@@ -47,4 +47,24 @@ class CommandLineQueryTest extends BaseApiTest {
         process.waitFor();
         return output;
     }
+
+    @Test
+    void curlGetFiltersProjectsByTitle() throws Exception {
+        String title = uniqueTitle("curl-proj");
+        String otherTitle = uniqueTitle("other-proj");
+        api.createProject(title);
+        api.createProject(otherTitle);
+
+        String output = curl("-G", api.url("/projects"), "--data-urlencode", "title=" + title);
+        assertTrue(output.startsWith("HTTP/1.1 200"));
+        assertTrue(output.contains(title));
+        assertFalse(output.contains(otherTitle));
+    }
+
+    @Test
+    void curlGetOfUnknownProjectReturns404() throws Exception {
+        String output = curl(api.url("/projects/999999"));
+        assertTrue(output.startsWith("HTTP/1.1 404"));
+        assertTrue(output.contains("Could not find an instance with projects/999999"));
+    }
 }

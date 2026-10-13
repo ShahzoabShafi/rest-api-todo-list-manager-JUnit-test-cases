@@ -4,12 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad915b1a-6d5d-4485-84a2-012be536dc39" name="Changes" comment="Project tests">
+    <list default="true" id="ad915b1a-6d5d-4485-84a2-012be536dc39" name="Changes" comment="Project tests 21 test cases pass for ProjectsTest.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/CommandLineQueryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/CommandLineQueryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api/ProjectsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/ProjectsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/UndocumentedApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/UndocumentedApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-api.CommandLineQueryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-api.CommandLineQueryTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-api.ProjectsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-api.ProjectsTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-api.UndocumentedApiTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-api.UndocumentedApiTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/api.CommandLineQueryTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/api.CommandLineQueryTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/api.ProjectsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/api.ProjectsTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/api.UndocumentedApiTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/api.UndocumentedApiTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api/CommandLineQueryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/api/CommandLineQueryTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/api/ProjectsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/api/ProjectsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api/UndocumentedApiTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/api/UndocumentedApiTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +110,7 @@
     <MESSAGE value="workspace xml" />
     <MESSAGE value="Project tests 7-10" />
     <MESSAGE value="Project tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project tests" />
+    <MESSAGE value="Project tests 21 test cases pass for ProjectsTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project tests 21 test cases pass for ProjectsTest.java" />
   </component>
 </project>
