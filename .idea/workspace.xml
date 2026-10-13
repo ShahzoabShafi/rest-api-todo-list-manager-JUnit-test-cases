@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad915b1a-6d5d-4485-84a2-012be536dc39" name="Changes" comment="Yessine files">
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/ProjectsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-api.CommandLineQueryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-api.CommandLineQueryTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-api.KnownBugsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-api.KnownBugsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-api.TodosTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-api.TodosTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-api.UndocumentedApiTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-api.UndocumentedApiTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/api.CommandLineQueryTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/api.CommandLineQueryTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/api.KnownBugsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/api.KnownBugsTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/api.TodosTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/api.TodosTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/api.UndocumentedApiTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/api.UndocumentedApiTest.txt" afterDir="false" />
-    </list>
+    <list default="true" id="ad915b1a-6d5d-4485-84a2-012be536dc39" name="Changes" comment="ProjectsTest: first 6 tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,6 +89,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Yessine files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Yessine files" />
+    <MESSAGE value="ProjectsTest: first 6 tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="ProjectsTest: first 6 tests" />
   </component>
 </project>
