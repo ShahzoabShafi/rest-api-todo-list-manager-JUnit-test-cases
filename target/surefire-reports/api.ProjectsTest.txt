@@ -1,4 +1,284 @@
 -------------------------------------------------------------------------------
 Test set: api.ProjectsTest
 -------------------------------------------------------------------------------
-Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.089 s -- in api.ProjectsTest
+Tests run: 35, Failures: 35, Errors: 0, Skipped: 0, Time elapsed: 0.248 s <<< FAILURE! -- in api.ProjectsTest
+api.ProjectsTest.postWithXmlBodyAndXmlResponse -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.putAndPatchOnCategoriesReturn405 -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.linkUnknownCategoryOrToUnknownProjectReturns404 -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.putOnTaskLinkReturns405 -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.getAllProjects -- Time elapsed: 0.007 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.postWithMalformedXmlIsRejected -- Time elapsed: 0.007 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.headCategoriesOfProject -- Time elapsed: 0.010 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.linkWithMalformedJsonLinksNothing -- Time elapsed: 0.007 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.deleteCategoryLinkThenAgainReturns404 -- Time elapsed: 0.012 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.linkUnknownTodoOrToUnknownProjectReturns404 -- Time elapsed: 0.008 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.filterProjectsByQueryParameters -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.postWithIdOrInvalidBooleanIsRejectedAndCreatesNothing -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.putWithXmlBody -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.getAllProjectsAsXml -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.deleteTaskLinkRemovesItOnBothSidesAndKeepsBoth -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.postLinksCategoryOnlyOnce -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.headTasksOfProject -- Time elapsed: 0.010 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.headProjects -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.getUnknownProjectReturns404 -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.deleteTaskLinkAgainReturns404 -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.amendWithJsonBodyAndXmlResponse -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.patchOnProjectReturns405 -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.headProjectById -- Time elapsed: 0.010 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.putPatchDeleteOnTasksReturn405 -- Time elapsed: 0.009 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.putPatchAndDeleteOnProjectsCollectionReturn405 -- Time elapsed: 0.015 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.getProjectByIdAsJsonAndXml -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.postWithMalformedJsonIsRejectedAndCreatesNothing -- Time elapsed: 0.008 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.postAmendsOnlyTheGivenField -- Time elapsed: 0.007 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.deleteProjectKeepsItsTodosAndOtherProjects -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.postLinksTodoInBothDirectionsOnlyOnce -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.deleteProjectTwiceReturns404 -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.putAndPostOnUnknownProjectReturn404 -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.postCreatesProject -- Time elapsed: 0.008 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.amendWithMalformedJsonOrInvalidBooleanLeavesProjectUnchanged -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+api.ProjectsTest.linkCategoryWithMalformedJsonLinksNothing -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

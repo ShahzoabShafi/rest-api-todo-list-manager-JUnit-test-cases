@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="api.KnownBugsTest" time="7.341" tests="38" errors="0" skipped="0" failures="19">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="api.KnownBugsTest" time="1.391" tests="38" errors="0" skipped="0" failures="38">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire/surefirebooter-20261013193605583_3.jar /home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire 2026-10-13T19-36-05_523-jvmRun1 surefire-20261013193605583_1tmp surefire_0-20261013193605583_2tmp"/>
+    <property name="sun.java.command" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire/surefirebooter-20261013200233578_3.jar /home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire 2026-10-13T20-02-33_485-jvmRun1 surefire-20261013200233578_1tmp surefire_0-20261013200233578_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/test-classes:/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/classes:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.0/junit-jupiter-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/home/shahzoabshafi/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.0/junit-jupiter-engine-5.11.0.jar:/home/shahzoabshafi/.m2/repository/org/junit/platform/junit-platform-engine/1.11.0/junit-platform-engine-1.11.0.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/shahzoabshafi/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/shahzoabshafi/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/shahzoabshafi/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/shahzoabshafi/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/shahzoabshafi/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/home/shahzoabshafi/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/home/shahzoabshafi/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire/surefirebooter-20261013193605583_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/shahzoabshafi/Desktop/rest-api-todo-list-manager-JUnit-test-cases/target/surefire/surefirebooter-20261013200233578_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.12.1+1-1-22.04.4-Ubuntu"/>
     <property name="user.name" value="shahzoabshafi"/>
@@ -54,507 +54,499 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="bug5_actual_getAndPostOnTasksOfByIdReturn404" classname="api.KnownBugsTest" time="1.435">
+  <testcase name="bug5_actual_getAndPostOnTasksOfByIdReturn404" classname="api.KnownBugsTest" time="0.912">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[Random order seed: 20260930
 
 KnownBugsTest.bug5_actual_getAndPostOnTasksOfByIdReturn404
-    GET /todos/172/tasksof/264                         expected 404, received 404
-    POST /todos/172/tasksof/264                        expected 404, received 404
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug14_expected_linkedProjectIsListedUnderTheCategory" classname="api.KnownBugsTest" time="0.229">
-    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at api.KnownBugsTest.bug14_expected_linkedProjectIsListedUnderTheCategory(KnownBugsTest.java:334)
+  <testcase name="bug14_expected_linkedProjectIsListedUnderTheCategory" classname="api.KnownBugsTest" time="0.007">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug14_expected_linkedProjectIsListedUnderTheCategory
-    POST /projects/265/categories                      expected 201, received 201
-    result: FAIL - expected: <true> but was: <false>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug7_expected_putWithOnlyATitleKeepsTheOtherFields" classname="api.KnownBugsTest" time="0.249">
-    <failure message="expected: &lt;Todo[id=173, title=renamed, doneStatus=true, description=keep me]&gt; but was: &lt;Todo[id=173, title=renamed, doneStatus=false, description=]&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <Todo[id=173, title=renamed, doneStatus=true, description=keep me]> but was: <Todo[id=173, title=renamed, doneStatus=false, description=]>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at api.KnownBugsTest.bug7_expected_putWithOnlyATitleKeepsTheOtherFields(KnownBugsTest.java:147)
+  <testcase name="bug7_expected_putWithOnlyATitleKeepsTheOtherFields" classname="api.KnownBugsTest" time="0.007">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug7_expected_putWithOnlyATitleKeepsTheOtherFields
-    PUT /todos/173                                     expected 200, received 200
-    result: FAIL - expected: <Todo[id=173, title=renamed, doneStatus=true, description=keep me]> but was: <Todo[id=173, title=renamed, doneStatus=false, description=]>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug13_expected_categoriesOfUnknownProjectReturns404" classname="api.KnownBugsTest" time="0.156">
-    <failure message="GET /projects/999999/categories status code ==&gt; expected: &lt;404&gt; but was: &lt;200&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: GET /projects/999999/categories status code ==> expected: <404> but was: <200>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
-	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
-	at api.KnownBugsTest.bug13_expected_categoriesOfUnknownProjectReturns404(KnownBugsTest.java:313)
+  <testcase name="bug13_expected_categoriesOfUnknownProjectReturns404" classname="api.KnownBugsTest" time="0.009">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug13_expected_categoriesOfUnknownProjectReturns404
-    GET /projects/999999/categories                    expected 404, received 200   <-- MISMATCH
-    result: FAIL - GET /projects/999999/categories status code ==> expected: <404> but was: <200>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug3_expected_categoriesOfUnknownTodoReturns404" classname="api.KnownBugsTest" time="0.158">
-    <failure message="GET /todos/999999/categories status code ==&gt; expected: &lt;404&gt; but was: &lt;200&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: GET /todos/999999/categories status code ==> expected: <404> but was: <200>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
-	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
-	at api.KnownBugsTest.bug3_expected_categoriesOfUnknownTodoReturns404(KnownBugsTest.java:64)
+  <testcase name="bug3_expected_categoriesOfUnknownTodoReturns404" classname="api.KnownBugsTest" time="0.015">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug3_expected_categoriesOfUnknownTodoReturns404
-    GET /todos/999999/categories                       expected 404, received 200   <-- MISMATCH
-    result: FAIL - GET /todos/999999/categories status code ==> expected: <404> but was: <200>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug5_expected_getAndPostOnTasksOfByIdReturn405" classname="api.KnownBugsTest" time="0.195">
-    <failure message="GET /todos/174/tasksof/266 status code ==&gt; expected: &lt;405&gt; but was: &lt;404&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: GET /todos/174/tasksof/266 status code ==> expected: <405> but was: <404>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
-	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
-	at api.KnownBugsTest.bug5_expected_getAndPostOnTasksOfByIdReturn405(KnownBugsTest.java:106)
+  <testcase name="bug5_expected_getAndPostOnTasksOfByIdReturn405" classname="api.KnownBugsTest" time="0.021">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug5_expected_getAndPostOnTasksOfByIdReturn405
-    GET /todos/174/tasksof/266                         expected 405, received 404   <-- MISMATCH
-    result: FAIL - GET /todos/174/tasksof/266 status code ==> expected: <405> but was: <404>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug10_actual_postWithEmptyArraysKeepsTheRelationships" classname="api.KnownBugsTest" time="0.204">
+  <testcase name="bug10_actual_postWithEmptyArraysKeepsTheRelationships" classname="api.KnownBugsTest" time="0.012">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug10_actual_postWithEmptyArraysKeepsTheRelationships
-    POST /todos/175 (empty tasksof array)              expected 200, received 200
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug6_actual_methodOverrideHeaderTurnsPutIntoPost" classname="api.KnownBugsTest" time="0.158">
+  <testcase name="bug6_actual_methodOverrideHeaderTurnsPutIntoPost" classname="api.KnownBugsTest" time="0.024">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug6_actual_methodOverrideHeaderTurnsPutIntoPost
-    PUT /todos/176/categories (override POST)          expected 201, received 201
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug12_expected_missingOrEmptyTitleIsRejected" classname="api.KnownBugsTest" time="0.126">
-    <failure message="POST /projects ({}) status code ==&gt; expected: &lt;400&gt; but was: &lt;201&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: POST /projects ({}) status code ==> expected: <400> but was: <201>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
-	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
-	at api.KnownBugsTest.bug12_expected_missingOrEmptyTitleIsRejected(KnownBugsTest.java:290)
+  <testcase name="bug12_expected_missingOrEmptyTitleIsRejected" classname="api.KnownBugsTest" time="0.019">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug12_expected_missingOrEmptyTitleIsRejected
-    POST /projects ({})                                expected 400, received 201   <-- MISMATCH
-    result: FAIL - POST /projects ({}) status code ==> expected: <400> but was: <201>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug4_actual_tasksOfWithoutIdCreatesAnEmptyProjectAndLinksIt" classname="api.KnownBugsTest" time="0.206">
+  <testcase name="bug4_actual_tasksOfWithoutIdCreatesAnEmptyProjectAndLinksIt" classname="api.KnownBugsTest" time="0.013">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug4_actual_tasksOfWithoutIdCreatesAnEmptyProjectAndLinksIt
-    POST /todos/177/tasksof ({})                       expected 201, received 201
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug3_actual_categoriesOfUnknownTodoReturns200" classname="api.KnownBugsTest" time="0.218">
+  <testcase name="bug3_actual_categoriesOfUnknownTodoReturns200" classname="api.KnownBugsTest" time="0.007">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug3_actual_categoriesOfUnknownTodoReturns200
-    GET /todos/999999/categories                       expected 200, received 200
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug6_expected_methodOverrideHeaderIsIgnored" classname="api.KnownBugsTest" time="0.158">
-    <failure message="PUT /todos/178/categories (override POST) status code ==&gt; expected: &lt;405&gt; but was: &lt;201&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: PUT /todos/178/categories (override POST) status code ==> expected: <405> but was: <201>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
-	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
-	at api.KnownBugsTest.bug6_expected_methodOverrideHeaderIsIgnored(KnownBugsTest.java:125)
+  <testcase name="bug6_expected_methodOverrideHeaderIsIgnored" classname="api.KnownBugsTest" time="0.007">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug6_expected_methodOverrideHeaderIsIgnored
-    PUT /todos/178/categories (override POST)          expected 405, received 201   <-- MISMATCH
-    result: FAIL - PUT /todos/178/categories (override POST) status code ==> expected: <405> but was: <201>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug15_expected_methodOverrideIsIgnoredOnProjects" classname="api.KnownBugsTest" time="0.13">
-    <failure message="PUT /projects/270/tasks (override POST) status code ==&gt; expected: &lt;405&gt; but was: &lt;201&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: PUT /projects/270/tasks (override POST) status code ==> expected: <405> but was: <201>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
-	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
-	at api.KnownBugsTest.bug15_expected_methodOverrideIsIgnoredOnProjects(KnownBugsTest.java:360)
+  <testcase name="bug15_expected_methodOverrideIsIgnoredOnProjects" classname="api.KnownBugsTest" time="0.025">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug15_expected_methodOverrideIsIgnoredOnProjects
-    PUT /projects/270/tasks (override POST)            expected 405, received 201   <-- MISMATCH
-    result: FAIL - PUT /projects/270/tasks (override POST) status code ==> expected: <405> but was: <201>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug11_actual_putWithOnlyATitleResetsTheOtherFields" classname="api.KnownBugsTest" time="0.125">
+  <testcase name="bug11_actual_putWithOnlyATitleResetsTheOtherFields" classname="api.KnownBugsTest" time="0.009">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug11_actual_putWithOnlyATitleResetsTheOtherFields
-    POST /projects                                     expected 201, received 201
-    PUT /projects/271 Project renamed                  expected 200, received 200
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug16_actual_arrayTitleOnProjectKeepsOnlyTheLastElement" classname="api.KnownBugsTest" time="0.121">
+  <testcase name="bug16_actual_arrayTitleOnProjectKeepsOnlyTheLastElement" classname="api.KnownBugsTest" time="0.008">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug16_actual_arrayTitleOnProjectKeepsOnlyTheLastElement
-    POST /projects (title is an array)                 expected 201, received 201
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug13_actual_categoriesOfUnknownProjectReturns200WithNoCategories" classname="api.KnownBugsTest" time="0.11">
+  <testcase name="bug13_actual_categoriesOfUnknownProjectReturns200WithNoCategories" classname="api.KnownBugsTest" time="0.011">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug13_actual_categoriesOfUnknownProjectReturns200WithNoCategories
-    GET /projects/999999/categories                    expected 200, received 200
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug9_actual_projectsTasksOfNonExistentProjectReturns200WithTodosOfOtherProjects" classname="api.KnownBugsTest" time="0.13">
+  <testcase name="bug9_actual_projectsTasksOfNonExistentProjectReturns200WithTodosOfOtherProjects" classname="api.KnownBugsTest" time="0.009">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug9_actual_projectsTasksOfNonExistentProjectReturns200WithTodosOfOtherProjects
-    GET /projects/999999/tasks (non-existent project)  expected 200, received 200
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug9_expected_projectsTasksOfNonExistentProjectReturns404" classname="api.KnownBugsTest" time="0.109">
-    <failure message="GET /projects/999999/tasks (non-existent project) status code ==&gt; expected: &lt;404&gt; but was: &lt;200&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: GET /projects/999999/tasks (non-existent project) status code ==> expected: <404> but was: <200>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
-	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
-	at api.KnownBugsTest.bug9_expected_projectsTasksOfNonExistentProjectReturns404(KnownBugsTest.java:191)
+  <testcase name="bug9_expected_projectsTasksOfNonExistentProjectReturns404" classname="api.KnownBugsTest" time="0.011">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug9_expected_projectsTasksOfNonExistentProjectReturns404
-    GET /projects/999999/tasks (non-existent project)  expected 404, received 200   <-- MISMATCH
-    result: FAIL - GET /projects/999999/tasks (non-existent project) status code ==> expected: <404> but was: <200>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug1_expected_arrayTitleIsRejected" classname="api.KnownBugsTest" time="0.128">
-    <failure message="POST /todos (title is an array) status code ==&gt; expected: &lt;400&gt; but was: &lt;201&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: POST /todos (title is an array) status code ==> expected: <400> but was: <201>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
-	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
-	at api.KnownBugsTest.bug1_expected_arrayTitleIsRejected(KnownBugsTest.java:28)
+  <testcase name="bug1_expected_arrayTitleIsRejected" classname="api.KnownBugsTest" time="0.011">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug1_expected_arrayTitleIsRejected
-    POST /todos (title is an array)                    expected 400, received 201   <-- MISMATCH
-    result: FAIL - POST /todos (title is an array) status code ==> expected: <400> but was: <201>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug2_expected_tasksOfUnknownTodoReturns404" classname="api.KnownBugsTest" time="0.101">
-    <failure message="GET /todos/999999/tasksof status code ==&gt; expected: &lt;404&gt; but was: &lt;200&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: GET /todos/999999/tasksof status code ==> expected: <404> but was: <200>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
-	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
-	at api.KnownBugsTest.bug2_expected_tasksOfUnknownTodoReturns404(KnownBugsTest.java:45)
+  <testcase name="bug2_expected_tasksOfUnknownTodoReturns404" classname="api.KnownBugsTest" time="0.01">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug2_expected_tasksOfUnknownTodoReturns404
-    GET /todos/999999/tasksof                          expected 404, received 200   <-- MISMATCH
-    result: FAIL - GET /todos/999999/tasksof status code ==> expected: <404> but was: <200>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug18_expected_rejectedPostDoesNotConsumeAnId" classname="api.KnownBugsTest" time="0.113">
-    <failure message="expected: &lt;275&gt; but was: &lt;276&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <275> but was: <276>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
-	at api.KnownBugsTest.bug18_expected_rejectedPostDoesNotConsumeAnId(KnownBugsTest.java:440)
+  <testcase name="bug18_expected_rejectedPostDoesNotConsumeAnId" classname="api.KnownBugsTest" time="0.007">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug18_expected_rejectedPostDoesNotConsumeAnId
-    POST /projects (active not boolean)                expected 400, received 400
-    result: FAIL - expected: <275> but was: <276>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug14_actual_linkedProjectIsMissingUnderTheCategory" classname="api.KnownBugsTest" time="0.143">
+  <testcase name="bug14_actual_linkedProjectIsMissingUnderTheCategory" classname="api.KnownBugsTest" time="0.012">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug14_actual_linkedProjectIsMissingUnderTheCategory
-    POST /projects/277/categories                      expected 201, received 201
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug8_actual_putRemovesTheRelationships" classname="api.KnownBugsTest" time="0.158">
+  <testcase name="bug8_actual_putRemovesTheRelationships" classname="api.KnownBugsTest" time="0.013">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug8_actual_putRemovesTheRelationships
-    PUT /todos/182                                     expected 200, received 200
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug15_actual_methodOverrideTurnsPutAndDeleteIntoPost" classname="api.KnownBugsTest" time="0.194">
+  <testcase name="bug15_actual_methodOverrideTurnsPutAndDeleteIntoPost" classname="api.KnownBugsTest" time="0.01">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug15_actual_methodOverrideTurnsPutAndDeleteIntoPost
-    PUT /projects/279/tasks (override POST)            expected 201, received 201
-    DELETE /projects (override POST)                   expected 201, received 201
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug11_expected_putWithOnlyATitleKeepsTheOtherFields" classname="api.KnownBugsTest" time="0.136">
-    <failure message="expected: &lt;keep me&gt; but was: &lt;&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <keep me> but was: <>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at api.KnownBugsTest.bug11_expected_putWithOnlyATitleKeepsTheOtherFields(KnownBugsTest.java:264)
+  <testcase name="bug11_expected_putWithOnlyATitleKeepsTheOtherFields" classname="api.KnownBugsTest" time="0.006">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug11_expected_putWithOnlyATitleKeepsTheOtherFields
-    POST /projects                                     expected 201, received 201
-    PUT /projects/281 Project renamed                  expected 200, received 200
-    result: FAIL - expected: <keep me> but was: <>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug4_expected_tasksOfWithoutIdIsRejected" classname="api.KnownBugsTest" time="0.116">
-    <failure message="POST /todos/184/tasksof ({}) should return a 4xx status but returned 201 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: POST /todos/184/tasksof ({}) should return a 4xx status but returned 201 ==> expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
-	at api.BaseApiTest.expectClientError(BaseApiTest.java:46)
-	at api.KnownBugsTest.bug4_expected_tasksOfWithoutIdIsRejected(KnownBugsTest.java:80)
+  <testcase name="bug4_expected_tasksOfWithoutIdIsRejected" classname="api.KnownBugsTest" time="0.034">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug4_expected_tasksOfWithoutIdIsRejected
-    POST /todos/184/tasksof ({})                       expected 4xx, received 201   <-- MISMATCH
-    result: FAIL - POST /todos/184/tasksof ({}) should return a 4xx status but returned 201 ==> expected: <true> but was: <false>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug7_actual_putWithOnlyATitleResetsTheOtherFields" classname="api.KnownBugsTest" time="0.217">
+  <testcase name="bug7_actual_putWithOnlyATitleResetsTheOtherFields" classname="api.KnownBugsTest" time="0.006">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug7_actual_putWithOnlyATitleResetsTheOtherFields
-    PUT /todos/185                                     expected 200, received 200
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug17_expected_getAndPostOnTaskLinkReturn405" classname="api.KnownBugsTest" time="0.236">
-    <failure message="GET /projects/284/tasks/186 status code ==&gt; expected: &lt;405&gt; but was: &lt;404&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: GET /projects/284/tasks/186 status code ==> expected: <405> but was: <404>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
-	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
-	at api.KnownBugsTest.bug17_expected_getAndPostOnTaskLinkReturn405(KnownBugsTest.java:414)
+  <testcase name="bug17_expected_getAndPostOnTaskLinkReturn405" classname="api.KnownBugsTest" time="0.004">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug17_expected_getAndPostOnTaskLinkReturn405
-    GET /projects/284/tasks/186                        expected 405, received 404   <-- MISMATCH
-    result: FAIL - GET /projects/284/tasks/186 status code ==> expected: <405> but was: <404>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug1_actual_arrayTitleKeepsOnlyTheLastElement" classname="api.KnownBugsTest" time="0.228">
+  <testcase name="bug1_actual_arrayTitleKeepsOnlyTheLastElement" classname="api.KnownBugsTest" time="0.012">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug1_actual_arrayTitleKeepsOnlyTheLastElement
-    POST /todos (title is an array)                    expected 201, received 201
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug2_actual_tasksOfUnknownTodoReturns200WithProjectsOfOtherTodos" classname="api.KnownBugsTest" time="0.265">
+  <testcase name="bug2_actual_tasksOfUnknownTodoReturns200WithProjectsOfOtherTodos" classname="api.KnownBugsTest" time="0.006">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug2_actual_tasksOfUnknownTodoReturns200WithProjectsOfOtherTodos
-    GET /todos/999999/tasksof                          expected 200, received 200
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug12_actual_missingOrEmptyTitleCreatesAProject" classname="api.KnownBugsTest" time="0.189">
+  <testcase name="bug12_actual_missingOrEmptyTitleCreatesAProject" classname="api.KnownBugsTest" time="0.005">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug12_actual_missingOrEmptyTitleCreatesAProject
-    POST /projects ({})                                expected 201, received 201
-    POST /projects (empty title)                       expected 201, received 201
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug10_expected_postClearsRelationshipsWithEmptyArrays" classname="api.KnownBugsTest" time="0.158">
-    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at api.KnownBugsTest.bug10_expected_postClearsRelationshipsWithEmptyArrays(KnownBugsTest.java:215)
+  <testcase name="bug10_expected_postClearsRelationshipsWithEmptyArrays" classname="api.KnownBugsTest" time="0.008">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug10_expected_postClearsRelationshipsWithEmptyArrays
-    POST /todos/189 (clear tasksof via POST)           expected 200, received 200
-    result: FAIL - expected: <true> but was: <false>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug16_expected_arrayTitleOnProjectIsRejected" classname="api.KnownBugsTest" time="0.106">
-    <failure message="POST /projects (title is an array) status code ==&gt; expected: &lt;400&gt; but was: &lt;201&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: POST /projects (title is an array) status code ==> expected: <400> but was: <201>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
-	at api.BaseApiTest.expectStatus(BaseApiTest.java:38)
-	at api.KnownBugsTest.bug16_expected_arrayTitleOnProjectIsRejected(KnownBugsTest.java:392)
+  <testcase name="bug16_expected_arrayTitleOnProjectIsRejected" classname="api.KnownBugsTest" time="0.007">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug16_expected_arrayTitleOnProjectIsRejected
-    POST /projects (title is an array)                 expected 400, received 201   <-- MISMATCH
-    result: FAIL - POST /projects (title is an array) status code ==> expected: <400> but was: <201>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug19_actual_parseErrorsAreSentAsHtmlWithAJsonBody" classname="api.KnownBugsTest" time="0.139">
+  <testcase name="bug19_actual_parseErrorsAreSentAsHtmlWithAJsonBody" classname="api.KnownBugsTest" time="0.013">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug19_actual_parseErrorsAreSentAsHtmlWithAJsonBody
-    POST /projects (malformed JSON)                    expected 400, received 400
-    POST /projects (malformed XML)                     expected 400, received 400
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug19_expected_parseErrorsAreSentAsJson" classname="api.KnownBugsTest" time="0.114">
-    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at api.KnownBugsTest.bug19_expected_parseErrorsAreSentAsJson(KnownBugsTest.java:462)
+  <testcase name="bug19_expected_parseErrorsAreSentAsJson" classname="api.KnownBugsTest" time="0.016">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug19_expected_parseErrorsAreSentAsJson
-    POST /projects (malformed JSON)                    expected 400, received 400
-    POST /projects (malformed XML)                     expected 400, received 400
-    result: FAIL - expected: <true> but was: <false>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug18_actual_rejectedPostSkipsAnId" classname="api.KnownBugsTest" time="0.115">
+  <testcase name="bug18_actual_rejectedPostSkipsAnId" classname="api.KnownBugsTest" time="0.005">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug18_actual_rejectedPostSkipsAnId
-    POST /projects (active not boolean)                expected 400, received 400
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug8_expected_putKeepsTheRelationships" classname="api.KnownBugsTest" time="0.128">
-    <failure message="expected: &lt;[293]&gt; but was: &lt;[]&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <[293]> but was: <[]>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at api.KnownBugsTest.bug8_expected_putKeepsTheRelationships(KnownBugsTest.java:169)
+  <testcase name="bug8_expected_putKeepsTheRelationships" classname="api.KnownBugsTest" time="0.006">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug8_expected_putKeepsTheRelationships
-    PUT /todos/190                                     expected 200, received 200
-    result: FAIL - expected: <[293]> but was: <[]>
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
-  <testcase name="bug17_actual_getAndPostOnTaskLinkReturn404" classname="api.KnownBugsTest" time="0.106">
+  <testcase name="bug17_actual_getAndPostOnTaskLinkReturn404" classname="api.KnownBugsTest" time="0.005">
+    <failure message="Todo manager is not running at http://localhost:4567" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Todo manager is not running at http://localhost:4567
+	at api.BaseApiTest.assertServiceIsRunning(BaseApiTest.java:61)
+	at api.BaseApiTest.prepareSystem(BaseApiTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
     <system-out><![CDATA[
 KnownBugsTest.bug17_actual_getAndPostOnTaskLinkReturn404
-    GET /projects/294/tasks/191                        expected 404, received 404
-    POST /projects/294/tasks/191                       expected 404, received 404
-    result: PASS
+    result: FAIL - Todo manager is not running at http://localhost:4567
 ]]></system-out>
   </testcase>
 </testsuite>
