@@ -111,6 +111,9 @@ java -jar runTodoManagerRestAPI-1.5.5.jar     # fresh server, default data
 bash session/projects_session.sh | tee projects_session_output.txt
 ```
 
+The similar `session/todos_session.sh` script replays the 50 curl commands of the todos session 
+and works in a similar way.
+
 ## Bugs found
 
 The 19 bugs are documented in the bug summary reports in `docs/`. Each bug has a summary,
