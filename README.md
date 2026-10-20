@@ -119,3 +119,8 @@ and works in a similar way.
 The 19 bugs are documented in the bug summary reports in `docs/`. Each bug has a summary,
 description, impact, steps to reproduce and the `KnownBugsTest` tests that reproduce it.
 Bugs 1–10 are on the todos endpoints and bugs 11–19 are on the projects endpoints.
+
+## Report
+
+The written report is in the `docs` folder. It describes the 
+exploratory testing, the unit test suite, the bugs found, and the lessons learned.
