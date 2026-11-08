@@ -1,7 +1,9 @@
 const chai = require('chai');
-const chaiHttp = require('chai-http'); // chai-http@4 (CommonJS)
+const chaiHttp = require('chai-http');
 
 chai.use(chaiHttp);
+
+chai.config.truncateThreshold = 0;
 
 const expect = chai.expect;
 const host = 'http://127.0.0.1:4567';

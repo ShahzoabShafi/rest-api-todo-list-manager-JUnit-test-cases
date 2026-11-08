@@ -42,8 +42,8 @@ Feature: Update the completion status of a TODO
 
     Examples:
       | id   | message                                  |
-      | 999  | Invalid GUID for 999 entity todo         |
-      | 1000 | Invalid GUID for 1000 entity todo        |
+      | 999  | No such todo entity instance with GUID or ID 999 found  |
+      | 1000 | No such todo entity instance with GUID or ID 1000 found |
 
   Scenario Outline: Update the completion status of a TODO with an invalid value (Error Flow)
     Given a TODO with the title "<title>" exists
@@ -53,5 +53,5 @@ Feature: Update the completion status of a TODO
 
     Examples:
       | title             | invalidValue | message                                                 |
-      | COMP 202 homework | maybe        | Failed Validation: doneStatus should be BOOLEAN but was STRING |
-      | Meal prep         | 5            | Failed Validation: doneStatus should be BOOLEAN but was STRING |
+      | COMP 202 homework | maybe        | Failed Validation: doneStatus should be BOOLEAN |
+      | Meal prep         | 5            | Failed Validation: doneStatus should be BOOLEAN |

@@ -65,7 +65,7 @@ Given('no TODO with the id {string} exists', async function (id) {
 // --- Shared error check ---
 
 Then('the user is notified of the non-existence error with the message {string}', function (message) {
-    const expected = message.replace('<old id>', this.notedId);
+    const expected = message.replace('<old id>', this.notedId).replace('<deleted id>', this.notedId);
     expect(this.notification, 'error message shown to the user').to.be.a('string');
     expect(this.notification).to.include(expected);
 });

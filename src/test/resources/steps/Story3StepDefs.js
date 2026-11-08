@@ -19,8 +19,6 @@ Given('that TODO has since been deleted', async function () {
     this.todoCountBefore = (await api.list('/todos', 'todos')).length;
 });
 
-// --- Steps for the "delete by id of the TODO titled X" wording ---
-
 When('a user deletes the TODO using the id of the TODO titled {string}', async function (title) {
     const todos = await api.list('/todos', 'todos');
     const todo = todos.find(t => t.title === title);
