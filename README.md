@@ -1,7 +1,7 @@
 # Rest API Todo List Manager – ECSE 429 Project Parts A and B
 
 Part A: exploratory testing and a JUnit 5 unit test suite.
-Part B: Gherkin story tests (Cucumber, JavaScript) for the Todos user stories.
+Part B: Gherkin story tests (Cucumber, JavaScript) for the Todos and Projects user stories.
 
 Application under test: **Rest API Todo List Manager**
 (`runTodoManagerRestAPI-1.5.5.jar`, http://localhost:4567).
@@ -9,7 +9,7 @@ Application under test: **Rest API Todo List Manager**
 | Team member | Student ID | Area tested |
 |---|---|---|
 | Yessine Chaari | 261179816 | Todos endpoints (Part A), Todos user stories (Part B) |
-| Shahzoab Shafi | 261160765 | Projects endpoints |
+| Shahzoab Shafi | 261160765 | Projects endpoints (Part A), Projects user stories (Part B) |
 
 ## Videos
 
@@ -34,7 +34,7 @@ java -jar runTodoManagerRestAPI-1.5.5.jar
 ```
 
 The server keeps its data in memory, so restarting it restores the default data and resets the
-id counters. **Restart it before running each suite** (see the note under Part B).
+id counters. **Restart it before running each suite.**
 
 ## Part A: unit test suite (JUnit 5)
 
@@ -85,19 +85,29 @@ junit.jupiter.execution.order.random.seed=20260930
 
 ## Part B: story tests (Cucumber)
 
-The five Todos user stories are written as Gherkin feature files, one per story:
+The ten user stories (five on todos, five on projects) are written as Gherkin feature files, one
+per story:
 
-| Story | Feature file |
-|---|---|
-| 1. Filter todos by title | `Story1FilterTodosByTitle.feature` |
-| 2. Update the completion status of a todo | `Story2UpdateTodoCompletionStatus.feature` |
-| 3. Delete a todo by id | `Story3DeleteTodoById.feature` |
-| 4. Associate a todo with a category | `Story4AssociateTodoWithCategory.feature` |
-| 5. View the projects of a todo | `Story5ViewProjectsOfTodo.feature` |
+| Story | Feature file | Author |
+|---|---|---|
+| 1. Filter todos by title | `Story1FilterTodosByTitle.feature` | Yessine |
+| 2. Update the completion status of a todo | `Story2UpdateTodoCompletionStatus.feature` | Yessine |
+| 3. Delete a todo by id | `Story3DeleteTodoById.feature` | Yessine |
+| 4. Associate a todo with a category | `Story4AssociateTodoWithCategory.feature` | Yessine |
+| 5. View the projects of a todo | `Story5ViewProjectsOfTodo.feature` | Yessine |
+| 6. Create a project | `Story6CreateProject.feature` | Shahzoab |
+| 7. Find projects by status | `Story7FindProjectsByStatus.feature` | Shahzoab |
+| 8. Update a project's details | `Story8UpdateProject.feature` | Shahzoab |
+| 9. Add a todo to a project | `Story9AddTodoToProject.feature` | Shahzoab |
+| 10. Delete a project | `Story10DeleteProject.feature` | Shahzoab |
 
-Each feature has a Background, and Scenario Outlines labelled Normal Flow, Alternative Flow or
-Error Flow. Together they expand to 36 scenarios. Every scenario starts from an empty system: a
-`Before` hook deletes all todos, categories and projects through the API.
+Each feature has a Background, and Scenario Outlines labelled Normal Flow, Alternative (or
+Alternate) Flow or Error Flow. Together they expand to 72 scenarios, which run in a pseudo-random
+order (seed `20261117`, set in `cucumber.js`).
+
+Before each scenario, a `Before` hook saves the ids of all existing todos, categories and projects.
+Afterwards, an `After` hook deletes everything the scenario created. The server's default data is
+kept, and every scenario is independent of the others.
 
 ### Run
 
@@ -114,38 +124,41 @@ Error Flow. Together they expand to 36 scenarios. Every scenario starts from an 
    npx cucumber-js
    ```
 
+   Run in a different random order:
+
+   ```bash
+   npx cucumber-js --order random:12345
+   ```
+
+   Run Stories 6–10 only:
+
+   ```bash
+   npx cucumber-js --tags @projects
+   ```
+
    Run one story only:
 
    ```bash
    npx cucumber-js src/test/resources/features/Story4AssociateTodoWithCategory.feature
    ```
 
-The tests call the server at http://127.0.0.1:4567. If it is not running, every scenario fails.
+The tests call the server at http://127.0.0.1:4567. If it is not running, every scenario fails
+(`connect ECONNREFUSED 127.0.0.1:4567`).
 
-**Expected result:** `36 scenarios (31 passed, 5 failed)` and
-`342 steps (330 passed, 7 skipped, 5 failed)`. The 5 failures are:
+**Expected result** on a freshly started server: `72 scenarios (68 passed, 4 failed)` and
+`600 steps (592 passed, 4 skipped, 4 failed)`. The 4 failures are:
 
 | Scenario | Cause |
 |---|---|
 | Story 4, Associate a todo with a category (Normal Flow), 2 examples | New bug: a todo linked with `POST /todos/:id/categories` is not listed by `GET /categories/:id/todos` |
 | Story 5, View the projects of a todo that does not exist (Error Flow), 2 examples | Known bug 2 of Part A: `GET /todos/:id/tasksof` returns projects for an id that does not exist |
-| Story 2, Update the completion status of a todo that does not exist, id `1000` | Test data collision, not an API bug (see below) |
-
-> **Note on ids.** The error flows of Stories 2 to 5 use the ids `999` and `1000` as ids that do
-> not exist. The server's id counter keeps growing during a run and the clean-up cannot reset it,
-> so on a server that has already created that many todos (for example after other test runs)
-> the Story 2 example with id `1000` fails because a todo with that id exists. Restarting the
-> server before the run avoids it.
->
-> The scenarios delete **all** todos, categories and projects, so do not run them against a
-> server that holds data you want to keep.
 
 ## Repository structure
 
 ```
 pom.xml                          Maven build (JUnit 5.11, REST Assured 5.5, Surefire 3.5)
 package.json, package-lock.json  Node dependencies for the story tests (Cucumber, chai, chai-http)
-cucumber.js                      Cucumber configuration
+cucumber.js                      Cucumber configuration (feature and step paths, random-order seed)
 README.md
 src/test/java/api/               Part A: JUnit 5 tests
   BaseApiTest.java               checks the server is running, saves and restores system state
@@ -161,10 +174,10 @@ src/test/java/api/               Part A: JUnit 5 tests
   CommandLineQueryTest.java      5 tests: runs curl as an external process
 src/test/resources/
   junit-platform.properties      Part A: random order and seed
-  features/                      Part B: the five Gherkin feature files
+  features/                      Part B: the ten Gherkin feature files
   steps/                         Part B: step definitions
-    CommonStepDefs.js            Before hook, shared Background steps, shared error-message check
-    Story1StepDefs.js … Story5StepDefs.js   steps specific to each story
+    CommonStepDefs.js            Before/After hooks, shared Background steps, shared error-message check
+    Story1StepDefs.js … Story10StepDefs.js   steps specific to each story
   support/
     api.js                       Part B: HTTP client (chai-http) and helpers
 session/

@@ -3,22 +3,18 @@ const api = require('../support/api.js');
 
 const expect = api.expect;
 
-async function countProjects() {
-    return (await api.list('/projects', 'projects')).length;
-}
-
 // --- When steps ---
 
 When('a user creates a project with title {string}, description {string} and active {string}',
     async function (title, description, active) {
-        this.projectCountBefore = await countProjects();
+        this.projectCountBefore = await api.countOf('/projects', 'projects');
         const res = await api.http().post('/projects')
             .send({ title: title, description: description, active: api.toBooleanOrRaw(active) });
         api.record(this, res);
     });
 
 When('a user creates a project with only the title {string}', async function (title) {
-    this.projectCountBefore = await countProjects();
+    this.projectCountBefore = await api.countOf('/projects', 'projects');
     const res = await api.http().post('/projects').send({ title: title });
     api.record(this, res);
 });
@@ -39,11 +35,11 @@ Then('the project titled {string} is not completed', async function (title) {
 });
 
 Then('the number of projects increases by {int}', async function (amount) {
-    expect(await countProjects()).to.equal(this.projectCountBefore + amount);
+    expect(await api.countOf('/projects', 'projects')).to.equal(this.projectCountBefore + amount);
 });
 
 Then('the number of projects is unchanged', async function () {
-    expect(await countProjects()).to.equal(this.projectCountBefore);
+    expect(await api.countOf('/projects', 'projects')).to.equal(this.projectCountBefore);
 });
 
 Then('the user is notified of the completion of the creation operation', function () {

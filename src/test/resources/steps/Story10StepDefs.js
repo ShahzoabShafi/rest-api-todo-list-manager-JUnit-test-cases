@@ -3,13 +3,7 @@ const api = require('../support/api.js');
 
 const expect = api.expect;
 
-async function countOf(path, key) {
-    return (await api.list(path, key)).length;
-}
-
-function findProject(title) {
-    return api.findByTitle('/projects', 'projects', title);
-}
+const { countOf, findProject } = api;
 
 // Counts are taken right before the DELETE, so "unchanged" / "decreases by" compare against the right moment
 async function deleteProject(world, id) {

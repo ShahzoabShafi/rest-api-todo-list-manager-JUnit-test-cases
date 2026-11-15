@@ -13,7 +13,7 @@ Feature: Associate a TODO with a category
     And the following categories exist:
       | title  | description         |
       | School | school related work |
-      | Home   | household tasks     |
+      | Household   | household tasks     |
       | Urgent | needs attention now |
 
   Scenario Outline: Associate a TODO with a category (Normal Flow)
@@ -28,7 +28,7 @@ Feature: Associate a TODO with a category
     Examples:
       | title             | category |
       | COMP 202 homework | School   |
-      | Meal prep         | Home     |
+      | Meal prep         | Household     |
 
   Scenario Outline: Associate a TODO that already has a category with an additional category (Alternative Flow)
     Given the TODO titled "<title>" is already associated with the category "<firstCategory>"
@@ -41,7 +41,7 @@ Feature: Associate a TODO with a category
     Examples:
       | title             | firstCategory | secondCategory |
       | COMP 202 homework | School        | Urgent         |
-      | Meal prep         | Home          | Urgent         |
+      | Meal prep         | Household          | Urgent         |
 
   Scenario Outline: Associate a TODO with a category that does not exist (Error Flow)
     Given a TODO with the title "<title>" exists
@@ -52,8 +52,8 @@ Feature: Associate a TODO with a category
 
     Examples:
       | title             | categoryId | message                                    |
-      | COMP 202 homework | 999        | Could not find thing matching value for id |
-      | Meal prep         | 1000       | Could not find thing matching value for id |
+      | COMP 202 homework | 999999        | Could not find thing matching value for id |
+      | Meal prep         | 1000999       | Could not find thing matching value for id |
 
   Scenario Outline: Associate a TODO that does not exist with a category (Error Flow)
     Given no TODO with the id "<todoId>" exists
@@ -64,5 +64,5 @@ Feature: Associate a TODO with a category
 
     Examples:
       | todoId | category | message                                         |
-      | 999    | School   | Could not find parent thing for relationship todos/999/categories |
-      | 1000   | Home     | Could not find parent thing for relationship todos/1000/categories |
+      | 999999    | School   | Could not find parent thing for relationship todos/999999/categories |
+      | 1000999   | Household     | Could not find parent thing for relationship todos/1000999/categories |

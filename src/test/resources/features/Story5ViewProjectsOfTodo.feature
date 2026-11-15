@@ -61,5 +61,5 @@ Feature: View all projects related to a TODO
 
     Examples:
       | id   | message                                       |
-      | 999  | Could not find an instance with todos/999     |
-      | 1000 | Could not find an instance with todos/1000    |
+      | 999999  | Could not find an instance with todos/999999     |
+      | 1000999 | Could not find an instance with todos/1000999    |

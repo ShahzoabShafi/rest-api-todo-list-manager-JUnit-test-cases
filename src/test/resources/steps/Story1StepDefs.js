@@ -17,18 +17,12 @@ When('a user filters the list of todos by title name {string}', async function (
     const res = await api.http().get('/todos').query({ title: title });
     this.response = res;
     this.filteredTodos = res.body.todos || [];
-    if (this.filteredTodos.length === 0) {
-        this.notification = `No todos found with title ${title}`;
-    }
 });
 
 When('a user filters the list of todos by the title substring {string}', async function (substring) {
     const res = await api.http().get('/todos');
     this.response = res;
     this.filteredTodos = (res.body.todos || []).filter(t => t.title.includes(substring));
-    if (this.filteredTodos.length === 0) {
-        this.notification = `No todos found with title ${substring}`;
-    }
 });
 
 Then('the filtered list contains {int} todo\\(s)', function (count) {
@@ -49,4 +43,10 @@ Then('the user is notified of the completion of the filtering operation', functi
 
 Then('the filtered list of todos is empty', function () {
     expect(this.filteredTodos.length).to.equal(0);
+});
+
+// The API answers an unmatched filter with 200 and an empty list, not an error
+Then('the user is notified that no todo matches the filter', function () {
+    expect(this.response).to.have.status(200);
+    expect(this.response.body.todos).to.deep.equal([]);
 });

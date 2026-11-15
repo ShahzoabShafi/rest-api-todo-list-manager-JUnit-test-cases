@@ -14,11 +14,28 @@ async function list(path, key) {
     return res.body[key] || [];
 }
 
-async function clearAll() {
-    const collections = [['/todos', 'todos'], ['/categories', 'categories'], ['/projects', 'projects']];
+const collections = [['/todos', 'todos'], ['/categories', 'categories'], ['/projects', 'projects']];
+
+async function countOf(path, key) {
+    return (await list(path, key)).length;
+}
+
+// The ids that exist right now, per collection, e.g. { '/todos': Set{'1','2'}, ... }
+async function snapshotIds() {
+    const snapshot = {};
+    for (const [path, key] of collections) {
+        snapshot[path] = new Set((await list(path, key)).map(item => item.id));
+    }
+    return snapshot;
+}
+
+// Delete everything created since the snapshot, so the server's default data is kept
+async function restore(snapshot) {
     for (const [path, key] of collections) {
         for (const item of await list(path, key)) {
-            await http().delete(`${path}/${item.id}`);
+            if (!snapshot[path].has(item.id)) {
+                await http().delete(`${path}/${item.id}`);
+            }
         }
     }
 }
@@ -37,6 +54,10 @@ async function findByTitle(path, key, title) {
     const item = await tryFindByTitle(path, key, title);
     expect(item, `"${title}" should exist at ${path}`).to.not.equal(undefined);
     return item;
+}
+
+function findProject(title) {
+    return findByTitle('/projects', 'projects', title);
 }
 
 function errorText(res) {
@@ -75,7 +96,7 @@ async function linkTask(projectTitle, todoTitle) {
 
 // Titles of the todos a project lists as its tasks
 async function taskTitlesOf(projectTitle) {
-    const project = await findByTitle('/projects', 'projects', projectTitle);
+    const project = await findProject(projectTitle);
     return (await list(`/projects/${project.id}/tasks`, 'todos')).map(t => t.title);
 }
 
@@ -86,7 +107,7 @@ async function projectTitlesOf(todoTitle) {
 }
 
 module.exports = {
-    expect, http, list, clearAll, create,
-    tryFindByTitle, findByTitle, errorText, record, toBooleanOrRaw,
+    expect, http, list, countOf, snapshotIds, restore, create,
+    tryFindByTitle, findByTitle, findProject, errorText, record, toBooleanOrRaw,
     associateCategory, linkTask, taskTitlesOf, projectTitlesOf
 };

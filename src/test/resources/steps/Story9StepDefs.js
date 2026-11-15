@@ -3,9 +3,7 @@ const api = require('../support/api.js');
 
 const expect = api.expect;
 
-function findProject(title) {
-    return api.findByTitle('/projects', 'projects', title);
-}
+const findProject = api.findProject;
 
 async function taskIdsOf(projectId) {
     return (await api.list(`/projects/${projectId}/tasks`, 'todos')).map(t => t.id);
@@ -28,7 +26,7 @@ When('a user adds the TODO titled {string} to the project {string}', async funct
 // Undocumented: posting a title instead of an id creates a new todo already linked (Part A note 41)
 When('a user adds a new task titled {string} with description {string} to the project {string}',
     async function (todoTitle, description, projectTitle) {
-        this.todoCountBefore = (await api.list('/todos', 'todos')).length;   // Yessine's count steps read this too
+        this.todoCountBefore = await api.countOf('/todos', 'todos');   // Yessine's count steps read this too
         const project = await findProject(projectTitle);
         await addTask(this, project.id, { title: todoTitle, description: description });
     });
@@ -55,7 +53,7 @@ Then('the TODO titled {string} lists the project {string}', async function (todo
 });
 
 Then('the total number of todos increases by {int}', async function (amount) {
-    expect((await api.list('/todos', 'todos')).length).to.equal(this.todoCountBefore + amount);
+    expect(await api.countOf('/todos', 'todos')).to.equal(this.todoCountBefore + amount);
 });
 
 Then('the tasks of the project {string} are unchanged', async function (projectTitle) {

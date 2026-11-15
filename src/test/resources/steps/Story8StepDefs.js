@@ -3,9 +3,7 @@ const api = require('../support/api.js');
 
 const expect = api.expect;
 
-function findProject(title) {
-    return api.findByTitle('/projects', 'projects', title);
-}
+const findProject = api.findProject;
 
 // POST amends only the fields sent (PUT would wipe the others: Part A bug 11)
 async function amendProject(world, id, body) {
@@ -46,7 +44,7 @@ When('a user updates the completed status of the project titled {string} to {str
 
 When('a user updates the description of the project with id {string} to {string}',
     async function (id, description) {
-        this.projectCountBefore = (await api.list('/projects', 'projects')).length;
+        this.projectCountBefore = await api.countOf('/projects', 'projects');
         await amendProject(this, id, { description: description });
     });
 

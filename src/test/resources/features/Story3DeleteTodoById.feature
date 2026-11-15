@@ -13,7 +13,7 @@ Feature: Delete a TODO by its identification number
     And the following categories exist:
       | title  | description         |
       | School | school related work |
-      | Home   | household tasks     |
+      | Household   | household tasks     |
     And the following projects exist:
       | title           | completed | active | description    |
       | Winter Semester | false     | true   | courses        |
@@ -56,8 +56,8 @@ Feature: Delete a TODO by its identification number
 
     Examples:
       | id   | message                                          |
-      | 999  | Could not find any instances with todos/999      |
-      | 1000 | Could not find any instances with todos/1000     |
+      | 999999  | Could not find any instances with todos/999999      |
+      | 1000999 | Could not find any instances with todos/1000999     |
 
   Scenario Outline: Delete the same TODO twice (Error Flow)
     Given a TODO with the title "<title>" exists

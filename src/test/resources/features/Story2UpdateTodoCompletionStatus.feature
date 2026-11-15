@@ -42,8 +42,8 @@ Feature: Update the completion status of a TODO
 
     Examples:
       | id   | message                                  |
-      | 999  | No such todo entity instance with GUID or ID 999 found  |
-      | 1000 | No such todo entity instance with GUID or ID 1000 found |
+      | 999999  | No such todo entity instance with GUID or ID 999999 found  |
+      | 1000999 | No such todo entity instance with GUID or ID 1000999 found |
 
   Scenario Outline: Update the completion status of a TODO with an invalid value (Error Flow)
     Given a TODO with the title "<title>" exists

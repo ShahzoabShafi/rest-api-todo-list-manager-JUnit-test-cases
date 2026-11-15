@@ -1,4 +1,9 @@
 {
+  "name": "todo-api-story-tests",
+  "private": true,
+  "scripts": {
+    "test:stories": "cucumber-js"
+  },
   "devDependencies": {
     "@cucumber/cucumber": "^12.9.0",
     "chai": "^4.5.0",

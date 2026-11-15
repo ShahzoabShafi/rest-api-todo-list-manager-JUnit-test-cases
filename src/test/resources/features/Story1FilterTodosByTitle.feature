@@ -43,10 +43,10 @@ Feature: Filter TODOs by title name
     Given no TODO with the title "<title>" exists
     When a user filters the list of todos by title name "<title>"
     Then the filtered list of todos is empty
-    And the user is notified of the non-existence error with the message "<message>"
+    And the user is notified that no todo matches the filter
 
     Examples:
-      | title        | message                             |
-      | Gym workout  | No todos found with title Gym workout |
-      | ECSE 999     | No todos found with title ECSE 999    |
-      | Meal prepare | No todos found with title Meal prepare |
+      | title        |
+      | Gym workout  |
+      | ECSE 999     |
+      | Meal prepare |

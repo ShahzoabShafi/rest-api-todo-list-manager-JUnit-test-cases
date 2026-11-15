@@ -1,11 +1,18 @@
-const { Given, Then, Before } = require('@cucumber/cucumber');
+const { Given, Then, Before, After } = require('@cucumber/cucumber');
 const api = require('../support/api.js');
 
 const expect = api.expect;
 
-// Start every scenario from an empty system so Background data is never duplicated
+// Remember which objects exist before the scenario (the server's default data)...
 Before(async function () {
-    await api.clearAll();
+    this.initialState = await api.snapshotIds();
+});
+
+// ...and afterwards delete everything the scenario created, restoring the initial state
+After(async function () {
+    if (this.initialState) {
+        await api.restore(this.initialState);
+    }
 });
 
 // --- Background steps shared by all stories ---
