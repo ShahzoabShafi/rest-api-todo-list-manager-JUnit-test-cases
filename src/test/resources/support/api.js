@@ -52,6 +52,13 @@ function record(world, res) {
     world.notification = res.status >= 400 ? errorText(res) : undefined;
 }
 
+// "true"/"false" become JSON booleans; any other text is sent as-is so invalid values reach the API
+function toBooleanOrRaw(text) {
+    if (text === 'true') return true;
+    if (text === 'false') return false;
+    return text;
+}
+
 async function associateCategory(todoTitle, categoryTitle) {
     const todo = await findByTitle('/todos', 'todos', todoTitle);
     const category = await findByTitle('/categories', 'categories', categoryTitle);
@@ -66,8 +73,20 @@ async function linkTask(projectTitle, todoTitle) {
     expect(res).to.have.status(201);
 }
 
+// Titles of the todos a project lists as its tasks
+async function taskTitlesOf(projectTitle) {
+    const project = await findByTitle('/projects', 'projects', projectTitle);
+    return (await list(`/projects/${project.id}/tasks`, 'todos')).map(t => t.title);
+}
+
+// Titles of the projects a todo says it is a task of
+async function projectTitlesOf(todoTitle) {
+    const todo = await findByTitle('/todos', 'todos', todoTitle);
+    return (await list(`/todos/${todo.id}/tasksof`, 'projects')).map(p => p.title);
+}
+
 module.exports = {
     expect, http, list, clearAll, create,
-    tryFindByTitle, findByTitle, errorText, record,
-    associateCategory, linkTask
+    tryFindByTitle, findByTitle, errorText, record, toBooleanOrRaw,
+    associateCategory, linkTask, taskTitlesOf, projectTitlesOf
 };

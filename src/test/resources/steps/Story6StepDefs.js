@@ -3,13 +3,6 @@ const api = require('../support/api.js');
 
 const expect = api.expect;
 
-// "true"/"false" become JSON booleans; any other text is sent as-is so invalid values reach the API
-function toActiveValue(text) {
-    if (text === 'true') return true;
-    if (text === 'false') return false;
-    return text;
-}
-
 async function countProjects() {
     return (await api.list('/projects', 'projects')).length;
 }
@@ -20,7 +13,7 @@ When('a user creates a project with title {string}, description {string} and act
     async function (title, description, active) {
         this.projectCountBefore = await countProjects();
         const res = await api.http().post('/projects')
-            .send({ title: title, description: description, active: toActiveValue(active) });
+            .send({ title: title, description: description, active: api.toBooleanOrRaw(active) });
         api.record(this, res);
     });
 
