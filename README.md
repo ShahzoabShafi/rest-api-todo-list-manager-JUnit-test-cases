@@ -15,7 +15,8 @@ Application under test: **Rest API Todo List Manager**
 
 - **Part A**, full suite run, random order with seeds 20260930 (twice) and 12345, and a run with the server stopped:
   https://drive.google.com/file/d/1bc0XAvL0clSKOjVljvLknxv122-DQI7T/view?usp=sharing
-- **Part B**, story test suite run: _link to be added_
+- **Part B**, story test suite run:
+- https://drive.google.com/file/d/1k1GOPwY2K7uGSpTP5QNLkNZFrDVygxLq/view?usp=sharing
 
 ## Requirements
 
